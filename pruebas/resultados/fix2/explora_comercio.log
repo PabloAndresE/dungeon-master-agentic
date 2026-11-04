@@ -1,0 +1,53 @@
+[mover] Voy a la plaza. (21s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. Una fuente de piedra se encuentra en el centro. Observas a Elena la comerciante, una figura conocida por su astucia y amabilidad, aunque siempre cuida su ganancia. Puedes dirigirte a la taberna, la herrería o el bosque.'
+[hablar] Hola Elena, ¿qué vendes? (5s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo."'
+[hablar] ¿Cuánto cuesta una poción? (7s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "Cada poción de curación cuesta 10 monedas de oro. Son muy útiles para cuando te encuentres con algún contratiempo."'
+[hablar] ¿Me la dejas en 5 monedas? (5s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "Lo siento, no bajo de 10 monedas de oro por cada poción. Son muy útiles para cuando te encuentres con algún contratiempo, ¿no te parece?"'
+[comprar] Le compro una poción a Elena. (5s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'})]
+   plaza→plaza hp 20→20 oro 15→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+[comprar] Le compro otra poción. (6s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'})]
+   plaza→plaza hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.'
+[pregunta_estado] ¿Cuánto oro me queda? (5s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Tienes 5 monedas de oro. La plaza central resplandece bajo el brillante sol de mediodía, proyectando sombras danzantes sobre la piedra lisa de la fuente, mientras el aire se perfuma con el aroma a pan recién horneado de la panadería cercana.'
+[mover] Voy a la herrería. (26s) []
+   pasos=[('move_to', {'destination': 'herreria'}), ('check_state', {})]
+   plaza→herreria hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Entra en la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes. Bron el herrero, un hombre fornido y orgulloso de su oficio, te mira con curiosidad. ¿Qué te gustaría hacer?'
+[hablar] Bron, ¿sabes algo de los goblins? (7s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Hablas con Bron el herrero.\nBron el herrero: "No he oído hablar de goblins por estas tierras, así que no puedo decirte nada de ellos."'
+[comprar] Le pago a Bron para que afile mi espada. (4s) []
+   pasos=[('buy_item', {'item_name': 'afilar espada'})]
+   herreria→herreria hp 20→20 oro 5→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.'
+[comprar] Le pago otra vez para que la afile. (8s) []
+   pasos=[('buy_item', {'item_name': 'afilar espada'}), ('check_state', {})]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo comprar: afilar espada cuesta 5 de oro y solo tienes 0.'
+[pregunta_dialogo] ¿Qué me dijo Elena? (3s) []
+   pasos=[('consult_world', {'topic': 'Elena la comerciante'})]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'Elena la comerciante te dijo: "Lo siento, no bajo de 10 monedas de oro por cada poción. Son muy útiles para cuando te encuentres con algún contratiempo, ¿no te parece?"'
+[pregunta_memoria] ¿Qué compré hoy? (36s) []
+   pasos=[('check_state', {})]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo realizar esa acción: afilar espada cuesta 5 de oro y no se ha realizado el pago de una poción de curación a Bron el herrero.'
+EXIT 0

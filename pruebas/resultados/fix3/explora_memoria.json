@@ -1,0 +1,457 @@
+[
+ {
+  "a": "Hablo con Goruk sobre el bosque.",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Goruk el tabernero.\nGoruk el tabernero: \"Dicen que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con oro.\"",
+  "flags": [],
+  "t": 3.7,
+  "err": null
+ },
+ {
+  "a": "Voy a la plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la plaza central del pueblo. La fuente de piedra centra la atención de la plaza, mientras que los comerciantes y los paseantes se mueven entre las tabernas y las tiendas. Elena la comerciante, una mujer de aspecto astuto pero amable, se encuentra en la plaza, atendiendo a sus clientes. Puedes caminar directamente hacia el bosque desde la plaza.",
+  "flags": [],
+  "t": 21.6,
+  "err": null
+ },
+ {
+  "a": "Le compro una poción a Elena.",
+  "intencion": "comprar",
+  "pasos": [
+   [
+    "buy_item",
+    {
+     "item_name": "pocion de curacion"
+    },
+    "COMPRA HECHA: pocion de curacion a Elena la comerciante por 10 de oro. [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, po"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.",
+  "flags": [],
+  "t": 5.1,
+  "err": null
+ },
+ {
+  "a": "Voy al bosque.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "bosque"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: bosque. Te mueves a: bosque. Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\nNPCs aqui: nadie. Objet"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mañana | Inventario: espada oxidada, pocion de curacion, pocion de curacion]\nDescripcion "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas al bosque. Los árboles altos bloquean la luz del sol, y se escuchan ruidos entre la maleza.",
+  "flags": [],
+  "t": 25.2,
+  "err": null
+ },
+ {
+  "a": "Recojo las hierbas medicinales.",
+  "intencion": "recoger",
+  "pasos": [
+   [
+    "pick_up_item",
+    {
+     "item_name": "hierbas medicinales"
+    },
+    "Recogiste: hierbas medicinales. [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mañana | Inventario: espada oxidada, pocion de curacion, pocion de curacion, "
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Recoges hierbas medicinales del suelo. Puedes notar que el bosque es densamente poblado de árboles y el suelo está cubierto de hojas y hierbas verdes.",
+  "flags": [],
+  "t": 20.1,
+  "err": null
+ },
+ {
+  "a": "¿Qué compré y a quién?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion, hierbas me"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Le pagaste 10 de oro a Elena la comerciante por pocion de curacion.",
+  "flags": [],
+  "t": 6.0,
+  "err": null
+ },
+ {
+  "a": "¿A quién conocí hasta ahora?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "personajes_conocidos"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- bosque (lugar): Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\nRela"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Has conocido a Goruk el tabernero, quien te contó que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con oro. Goruk es el único personaje que has interactuado con hasta ahora. [Eventos descubiertos: \n1. Bosque: Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza. 2. Plaza: Conecta con el bosque. 3. Taberna: Conecta con el bosque. 4. Cueva: Conecta con el bosque.]",
+  "flags": [],
+  "t": 26.0,
+  "err": null
+ },
+ {
+  "a": "¿Qué me advirtió Goruk?",
+  "intencion": "pregunta_dialogo",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "bosque"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- bosque (lugar): Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\nRela"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Goruk el tabernero te dijo: \"Dicen que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con oro.\"",
+  "flags": [],
+  "t": 7.0,
+  "err": null
+ },
+ {
+  "a": "¿Dónde estaban las hierbas?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "hierbas"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- bosque (lugar): Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\n- hi"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion, hierbas me"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Hierbas medicinales estaban en bosque.",
+  "flags": [],
+  "t": 9.3,
+  "err": null
+ },
+ {
+  "a": "¿Qué hice primero?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion, hierbas me"
+   ],
+   [
+    "consult_world",
+    {
+     "topic": ""
+    },
+    "EVENTOS EN ORDEN (verdad del juego):\n1. Hablo con Goruk el tabernero: Dicen que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Primero hablaste con Goruk el tabernero, quien te advirtió:  Luego, te moviste de la taberna a la plaza y compraste una poción de curación a Elena la comerciante por 10 de oro. Posteriormente, regresaste al bosque y recogiste hierbas medicinales.",
+  "flags": [],
+  "t": 26.3,
+  "err": null
+ },
+ {
+  "a": "Resume en una frase lo que hice.",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion, hierbas me"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Primero hablaste con Goruk el tabernero, luego te moviste de la plaza al bosque y recogiste hierbas medicinales.",
+  "flags": [],
+  "t": 25.8,
+  "err": null
+ },
+ {
+  "a": "¿Cuántas veces cambié de lugar?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: bosque | Momento: tarde | Inventario: espada oxidada, pocion de curacion, pocion de curacion, hierbas medic"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion",
+    "hierbas medicinales"
+   ]
+  },
+  "resp": "Cambiaste de lugar tres veces. Primero de la taberna a la plaza, luego de la plaza al bosque, y finalmente recogiste hierbas medicinales en el bosque.",
+  "flags": [],
+  "t": 25.2,
+  "err": null
+ }
+]

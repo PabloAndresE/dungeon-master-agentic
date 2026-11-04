@@ -1,0 +1,53 @@
+[explorar] Examino la chimenea de la taberna. (29s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas la chimenea de la taberna y notas que parece más grande por dentro de lo que parece por fuera. Al pasar la mano sobre las baldosas, notas que algunas de ellas están sueltas y podrían ocultar algo. Sigues con la sensación de que hay algo interesante ahí dentro, pero no te atreves a entrar sin más información o preparación.'
+[pregunta_memoria] ¿Encontré algo? (54s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'La tomas y notas que la chimenea parece más grande por dentro de lo que parece a simple vista. Sigues con la sensación de que hay algo interesante ahí adentro, pero no te atreves a entrar sin más información o preparación. ¿Qué deseas hacer?'
+[recoger] Lo recojo. (19s) []
+   pasos=[('pick_up_item', {'item_name': 'antorcha'}), ('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Has recogido la antorcha de la chimenea. Goruk el tabernero te mira con curiosidad mientras tomas la antorcha. La luz de la antorcha ilumina la taberna, revelando un ambiente cálido y acogedor con el olor a estofado que se cuela por la chimenea. ¿Qué deseas hacer ahora?'
+[pregunta_estado] ¿Qué llevo? (2s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Llevas: espada oxidada, pocion de curacion, antorcha. En la taberna, la luz cálida y tenue de las velas se filtra entre las cortinas empolvadas, mientras el resplandor del fuego crepita y danza en la chimenea, proyectando sombras danzantes sobre las tablas del suelo.'
+[explorar] Examino la chimenea otra vez. (18s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Examinas la chimenea con más detenimiento. Al pasar tu antorcha por las baldosas, notas que algunas de ellas están sueltas y podrían ocultar algo. Decides intentar sacar una baldosa para ver adentro. El agujero que aparece es oscuro y aparentemente conduce a un pasadizo secreto. Goruk el tabernero te mira con curiosidad mientras tú te inclinas para'
+[mover] Busco una puerta trasera. (37s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'No hay puerta trasera en la taberna. Sigues en la taberna, con la antorcha en mano, inspeccionando las baldosas de la chimenea. Las baldosas sueltas que descubriste antes siguen allí, pero no hay ninguna puerta trasera que se abra.'
+[mover] Entro por ahí. (23s) []
+   pasos=[('move_to', {'destination': 'pasadizo_secreto'}), ('check_state', {})]
+   taberna→pasadizo_secreto hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Llegas al oscuro pasadizo secreto. Las baldosas de la chimenea, sueltas y evidentes a la vista, muestran un oscuro agujero que conduce hacia adentro. La llama de tu antorcha danza a la brisa que se cuela a través de la abertura. El pasadizo es estrecho y empolvado, iluminado solo por la tenue luz de tu antorcha. Sigues avanzando con cuidado, escudr'
+[pregunta_estado] ¿Dónde estoy? (3s) []
+   pasos=[('check_state', {})]
+   pasadizo_secreto→pasadizo_secreto hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Estás en pasadizo secreto. Desde aquí puedes ir a: taberna. El pasadizo secreto se ilumina tenuemente con la luz del mediodía, filtrándose a través del oscuro agujero en la chimenea.'
+[mover] Vuelvo a la taberna. (15s) []
+   pasos=[('move_to', {'destination': 'taberna'})]
+   pasadizo_secreto→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Llegas de nuevo a la taberna, donde un fuerte olor a estofado calienta el aire. Un fuego crepita en la chimenea, proyectando sombras danzantes en las taberneras. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira desde detrás del mostrador.'
+[pregunta_memoria] ¿Qué sitios nuevos hay? (14s) []
+   pasos=[('consult_world', {'topic': 'lugares'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'En la taberna, has descubierto dos nuevos lugares: la chimenea secreta y el pasadizo secreto. La chimenea parece más grande por dentro de lo que parece por fuera, y el pasadizo secreto es un oscuro corredor que conduce desde la chimenea.'
+[hablar] Busco al tabernero. (3s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "No busques al tabernero, que aquí no hay ninguno."'
+[recoger] Recojo la antorcha. (3s) []
+   pasos=[('pick_up_item', {'item_name': 'antorcha'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → "No hay 'antorcha' aqui. Objetos disponibles: ninguno"
+[recoger] Recojo la antorcha. (10s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Recolijes la antorcha de la chimenea. La taberna se ilumina con su luz tenue.'
+EXIT 0

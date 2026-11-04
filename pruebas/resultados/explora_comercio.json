@@ -1,0 +1,476 @@
+[
+ {
+  "a": "Voy a la plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la plaza central del pueblo. Una fuente de piedra centra la atención de los pocos lugareños que se encuentran allí. Elena la comerciante, una mujer de aspecto astuto pero amable, te observa desde su puesto. Puedes ver la taberna, la herrería y el bosque en las cercanías.",
+  "flags": [],
+  "t": 48.1,
+  "err": null
+ },
+ {
+  "a": "Hola Elena, ¿qué vendes?",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Elena la comerciante.\nElena la comerciante: \"¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo.\"",
+  "flags": [],
+  "t": 3.6,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto cuesta una poción?",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Elena la comerciante.\nElena la comerciante: \"Cada poción de curación cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo.\"",
+  "flags": [],
+  "t": 7.2,
+  "err": null
+ },
+ {
+  "a": "¿Me la dejas en 5 monedas?",
+  "intencion": "hablar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Elena la comerciante.\nElena la comerciante: \"Lo siento, no bajo de 10 monedas por cada poción de curación. Son muy valiosas para cualquier aventura. ¿Quizás prefieres algo más económico?\"",
+  "flags": [],
+  "t": 8.8,
+  "err": null
+ },
+ {
+  "a": "Le compro una poción a Elena.",
+  "intencion": "comprar",
+  "pasos": [
+   [
+    "buy_item",
+    {
+     "item_name": "poción de curacion"
+    },
+    "COMPRA HECHA: pocion de curacion a Elena la comerciante por 10 de oro. [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, po"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion, pocion de curacion]\nDescripcion d"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.",
+  "flags": [],
+  "t": 6.4,
+  "err": null
+ },
+ {
+  "a": "Le compro otra poción.",
+  "intencion": "comprar",
+  "pasos": [
+   [
+    "buy_item",
+    {
+     "item_name": "pocion de curacion"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). NO SE COMPRO: pocion de curacion cuesta 10 de oro y solo tienes 5. [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momen"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion]\nDescripcion"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.",
+  "flags": [],
+  "t": 8.0,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto oro me queda?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion]\nDescripcion"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Tienes 5 monedas de oro. La plaza central resplandece bajo el brillante sol de mediodía, proyectando sombras danzantes sobre la piedra lisa de la fuente, mientras el aire se perfuma suavemente con el aroma a flores recién abiertas y pan recién horneado.",
+  "flags": [],
+  "t": 5.2,
+  "err": null
+ },
+ {
+  "a": "Voy a la herrería.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "herreria"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: herreria. Te mueves a: herreria. El calor del horno es sofocante. Espadas y escudos cuelgan de las paredes.\nNPCs aqui: "
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 5 | Ubicacion: herreria | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion]\nDescripc"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes, y el olor a hierro derretido y metal recién forjado se mezcla con el aire. Bron, el herrero, te saluda con una sonrisa.",
+  "flags": [],
+  "t": 29.6,
+  "err": null
+ },
+ {
+  "a": "Bron, ¿sabes algo de los goblins?",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Bron el herrero.\nBron el herrero: \"No he oído hablar de goblins por estas tierras, así que no puedo decirte nada de ellos.\"\n\nHablas con Ferrik el Pico Corto.\nFerrik el Pico Corto: \"Sí, he oído hablar de ellos. Son criaturas astutas y peligrosas, siempre escondidas en los bosques. Los goblins son expertos en caza y espionaje, como yo.\"",
+  "flags": [],
+  "t": 14.2,
+  "err": null
+ },
+ {
+  "a": "Le pago a Bron para que afile mi espada.",
+  "intencion": "comprar",
+  "pasos": [
+   [
+    "buy_item",
+    {
+     "item_name": "afilar espada"
+    },
+    "COMPRA HECHA: afilar espada a Bron el herrero por 5 de oro. [HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: mediodía | Inventario: espada afilada, pocion d"
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.",
+  "flags": [],
+  "t": 7.2,
+  "err": null
+ },
+ {
+  "a": "Le pago otra vez para que la afile.",
+  "intencion": "comprar",
+  "pasos": [
+   [
+    "buy_item",
+    {
+     "item_name": "afilar espada"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). NO SE COMPRO: afilar espada cuesta 5 de oro y solo tienes 0. [HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento:"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: mediodía | Inventario: espada afilada, pocion de curacion, pocion de curacion]\nDescripc"
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No se pudo comprar: afilar espada cuesta 5 de oro y solo tienes 0.",
+  "flags": [],
+  "t": 8.3,
+  "err": null
+ },
+ {
+  "a": "¿Qué me dijo Elena?",
+  "intencion": "pregunta_dialogo",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "Elena"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- Ferrik el Pico Corto (npc): Un goblin de apariencia ágil y oscura, conocido por sus hab"
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Elena la comerciante te dijo: \"Lo siento, no bajo de 10 monedas por cada poción de curación. Son muy valiosas para cualquier aventura. ¿Quizás prefieres algo más económico?\"",
+  "flags": [],
+  "t": 3.5,
+  "err": null
+ },
+ {
+  "a": "¿Qué compré hoy?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: tarde | Inventario: espada afilada, pocion de curacion, pocion de curacion]\nDescripcion"
+   ],
+   [
+    "consult_world",
+    {
+     "topic": "compras"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- herreria (lugar): El calor del horno es sofocante. Espadas y escudos cuelgan de las par"
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagaste 10 de oro a Elena la comerciante por pocion de curacion. Le pagaste 5 de oro a Bron el herrero por afilar tu espada.",
+  "flags": [],
+  "t": 8.0,
+  "err": null
+ }
+]

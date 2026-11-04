@@ -1,0 +1,14 @@
+# Chroma index: binary, ~26 MB, and rebuildable from data/srd/*.json
+# with build_docs.py. Committing it would version a build artefact.
+data/srd/chroma/
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+
+# Notebook outputs are kept on purpose: the evaluation tables and the judge
+# scores live in them, and this project has no other record of those runs.

@@ -1,0 +1,40 @@
+<section id="portipo" data-transition="fade" style="background:#f5f1e8;color:#1c1f26;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div style="display:flex;flex-direction:column;gap:24px">
+<p style="font-size:28px;color:#a3471a;letter-spacing:4px;text-transform:uppercase;font-weight:600">Resultados por tipo de pregunta</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">¿De dónde sale la mejora?</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<h3 style="font-size:36px;font-weight:600">Reglas del SRD</h3>
+<p style="font-size:24px;color:#2a78d6;font-weight:600">Baseline</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:119px;height:34px;background:#2a78d6;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">35</p></div>
+<p style="font-size:24px;color:#c4521f;font-weight:600">Agéntico</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:126px;height:34px;background:#eb6834;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">37</p></div>
+<p style="font-size:24px;color:#137a56;font-weight:600">Agéntico + RAG + grafo</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:275px;height:34px;background:#1baf7a;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px;font-weight:600">81</p></div>
+<p style="font-size:26px;line-height:1.4;color:#3e4450;border-top:1px solid #e1d9c6;padding-top:16px">Los dos primeros inventan; el RAG cita el texto oficial.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<h3 style="font-size:36px;font-weight:600">Memoria y mapa</h3>
+<p style="font-size:24px;color:#2a78d6;font-weight:600">Baseline</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:238px;height:34px;background:#2a78d6;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">70</p></div>
+<p style="font-size:24px;color:#c4521f;font-weight:600">Agéntico</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:187px;height:34px;background:#eb6834;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">55</p></div>
+<p style="font-size:24px;color:#137a56;font-weight:600">Agéntico + RAG + grafo</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:316px;height:34px;background:#1baf7a;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px;font-weight:600">93</p></div>
+<p style="font-size:26px;line-height:1.4;color:#3e4450;border-top:1px solid #e1d9c6;padding-top:16px">El agéntico queda bajo el baseline; el grafo lo supera.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<h3 style="font-size:36px;font-weight:600">Estado y acciones</h3>
+<p style="font-size:24px;color:#2a78d6;font-weight:600">Baseline</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:265px;height:34px;background:#2a78d6;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">78</p></div>
+<p style="font-size:24px;color:#c4521f;font-weight:600">Agéntico</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:269px;height:34px;background:#eb6834;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px">79</p></div>
+<p style="font-size:24px;color:#137a56;font-weight:600">Agéntico + RAG + grafo</p>
+<div style="display:flex;flex-direction:row;gap:12px;align-items:center"><div style="width:320px;height:34px;background:#1baf7a;border-radius:0px 6px 6px 0px"></div><p style="font-size:28px;font-weight:600">94</p></div>
+<p style="font-size:26px;line-height:1.4;color:#3e4450;border-top:1px solid #e1d9c6;padding-top:16px">Herramientas solas empatan; con planner y validación en código, sube.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6b6f78">Nota del juez 72B (0–100), hold-out 2, 3 corridas: 16 turnos de estado, 6 de memoria y 4 de reglas. No es una ablación.</p>
+<aside>(≈25 s) Por tipo de pregunta: en reglas, 35 y 37 contra 81 con RAG. En memoria, el agéntico saca menos que el baseline y el grafo llega a 93. En estado, las herramientas solas empatan; con el planner, 94.</aside>
+</section>

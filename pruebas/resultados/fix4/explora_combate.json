@@ -1,0 +1,567 @@
+[
+ {
+  "a": "Ataco a Goruk.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Ataco a Goruk."
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Goruk el tabernero no es hostil."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Goruk el tabernero no es hostil.",
+  "flags": [],
+  "t": 4.7,
+  "err": null
+ },
+ {
+  "a": "¿Cuánta vida tengo?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Tienes 20/20 puntos de vida. En la taberna, la tenue luz matutina del amanecer se filtra a través de las cortinas empolvadas, iluminando tenues rayos que danzan entre las tablas del suelo y las sombras de las mesas.",
+  "flags": [],
+  "t": 2.9,
+  "err": null
+ },
+ {
+  "a": "Me tomo la poción.",
+  "intencion": "curarse",
+  "pasos": [
+   [
+    "use_potion",
+    {},
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Ya tienes la vida al maximo (20/20): guardas la pocion."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Ya tienes la vida al maximo (20/20): guardas la pocion.",
+  "flags": [],
+  "t": 4.2,
+  "err": null
+ },
+ {
+  "a": "Me tomo otra poción.",
+  "intencion": "curarse",
+  "pasos": [
+   [
+    "use_potion",
+    {},
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Ya tienes la vida al maximo (20/20): guardas la pocion."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Ya tienes la vida al maximo (20/20): guardas la pocion.",
+  "flags": [],
+  "t": 4.4,
+  "err": null
+ },
+ {
+  "a": "Voy al bosque.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "bosque"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: bosque. Te mueves a: bosque. Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\nNPCs aqui: nadie. Objet"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas al bosque. Los árboles altos bloquean la luz, y se escuchan ruidos entre la maleza. Encuentras algunas hierbas medicinales en el suelo.",
+  "flags": [],
+  "t": 21.6,
+  "err": null
+ },
+ {
+  "a": "Ataco al lobo.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Ataco al lobo."
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). No hay ningun enemigo asi aqui. Presentes: nadie"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Arbole"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No hay ningun enemigo asi aqui. Presentes: nadie",
+  "flags": [],
+  "t": 6.2,
+  "err": null
+ },
+ {
+  "a": "Voy a la cueva.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "cueva"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: cueva. Te mueves a: cueva. Una cueva oscura y humeda. Huesos viejos esparcidos por el suelo.\nNPCs aqui: ['Goblin centin"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la cueva. Es un lugar oscuro y húmedo, con huesos viejos esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te observa con ojos amenazantes. Goblin centinela: El goblin centinela te mira con desconfianza y lista para atacar.",
+  "flags": [],
+  "t": 24.2,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Ataco al goblin."
+    },
+    "--- COMBATE vs Goblin centinela ---\nTu ataque con espada oxidada: d20=13+5=18 vs CA 15 -> ACIERTO, 4 de daño (PG de Goblin centinela: 3/7)\nAtaque de Goblin cent"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 13,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Atacas a Goblin centinela con tu espada oxidada (tirada 18 contra CA 15): ¡aciertas! Le haces 4 de daño y le quedan 3/7 PG. Goblin centinela te ataca (tirada 20 contra tu CA 14): te hace 7 de daño. Te quedan 13/20 PG.",
+  "flags": [],
+  "t": 7.7,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goblin centinela"
+    },
+    "--- COMBATE vs Goblin centinela ---\nTu ataque con espada oxidada: d20=15+5=20 vs CA 15 -> ACIERTO, 1 de daño (PG de Goblin centinela: 2/7)\nAtaque de Goblin cent"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 13,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 8,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Atacas a Goblin centinela con tu espada oxidada (tirada 20 contra CA 15): ¡aciertas! Le haces 1 de daño y le quedan 2/7 PG. Goblin centinela te ataca (tirada 14 contra tu CA 14): te hace 5 de daño. Te quedan 8/20 PG.",
+  "flags": [],
+  "t": 5.4,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goblin centinela"
+    },
+    "--- COMBATE vs Goblin centinela ---\nTu ataque con espada oxidada: d20=15+5=20 vs CA 15 -> ACIERTO, 1 de daño (PG de Goblin centinela: 1/7)\nAtaque de Goblin cent"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 8,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Atacas a Goblin centinela con tu espada oxidada (tirada 20 contra CA 15): ¡aciertas! Le haces 1 de daño y le quedan 1/7 PG. Goblin centinela te ataca (tirada 23 contra tu CA 14): te hace 4 de daño. Te quedan 4/20 PG.",
+  "flags": [],
+  "t": 4.6,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goblin centinela"
+    },
+    "--- COMBATE vs Goblin centinela ---\nTu ataque con espada oxidada: d20=13+5=18 vs CA 15 -> ACIERTO, 5 de daño (PG de Goblin centinela: 0/7)\n¡Goblin centinela ha "
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Atacas a Goblin centinela con tu espada oxidada (tirada 18 contra CA 15): ¡aciertas! Le haces 5 de daño. ¡Goblin centinela cae derrotado!",
+  "flags": [],
+  "t": 4.2,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goblin centinela"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). No hay ningun enemigo asi aqui. Presentes: nadie"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 4/20 | Oro: 15 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una cueva o"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No hay ningun enemigo asi aqui. Presentes: nadie",
+  "flags": [],
+  "t": 8.4,
+  "err": null
+ },
+ {
+  "a": "¿El goblin sigue vivo?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 4/20 | Oro: 15 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una cueva o"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Estás en cueva. Aquí hay: cofre con 50 monedas de oro. Personajes: nadie. Llevas: espada oxidada, pocion de curacion. En la cueva, la tenue luz del atardecer se filtra a través de las grietas, iluminando tenazmente el suelo húmedo y los huesos desgastados que yacen en desorden, mientras el eco de los pájaros nocturnos comienza a llenar el aire.",
+  "flags": [],
+  "t": 4.0,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin otra vez.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goblin centinela"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). No hay ningun enemigo asi aqui. Presentes: nadie"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No hay ningun enemigo asi aqui. Presentes: nadie",
+  "flags": [],
+  "t": 2.0,
+  "err": null
+ },
+ {
+  "a": "Recojo lo que haya dejado el goblin.",
+  "intencion": "recoger",
+  "pasos": [
+   [
+    "pick_up_item",
+    {
+     "item_name": "cofre con 50 monedas de oro"
+    },
+    "Recogiste las monedas. Oro total (ya actualizado): 65. [HP: 4/20 | Oro: 65 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion]"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 4/20 | Oro: 65 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una cueva o"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Recoges las monedas del cofre y las añades a tu tesoro. Ahora tienes 65 monedas de oro. La cueva sigue siendo un lugar oscuro y húmedo, con huesos viejos esparcidos por el suelo. A pesar de que el goblin centinela ya no está, el ambiente sigue siendo tenso.",
+  "flags": [],
+  "t": 24.8,
+  "err": null
+ },
+ {
+  "a": "¿Cuánta vida me queda?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 4/20 | Oro: 65 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una cueva o"
+   ]
+  ],
+  "antes": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 4,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Tienes 4/20 puntos de vida. En la cueva, la tenue luz del atardecer se filtra a través de pequeñas grietas en el techo, iluminando tenazmente el suelo mojado y los huesos desgastados que yacen esparcidos por el lugar, creando una atmósfera tétrica y sombría.",
+  "flags": [],
+  "t": 3.6,
+  "err": null
+ }
+]

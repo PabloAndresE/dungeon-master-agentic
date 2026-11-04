@@ -1,0 +1,377 @@
+[
+ {
+  "a": "Examino la chimenea de la taberna.",
+  "intencion": "explorar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Exames la chimenea de la taberna y notas que los ladrillos en el interior parecen tener una configuración un poco diferente. Al tocarlos, descubres que pueden moverse, revelando un pequeño canalón secreto que conduce a una especie de almacén subterráneo. Descubres un lugar nuevo: canalización_secreta_chimenea (Al examinar la chimenea, notas que los ladrillos en el interior parecen tener una configuración un poco diferente. Al tocarlos, descubres que pueden moverse, revelando un pequeño canalón secreto que conduce a una especie de almacén subterráneo.). Se llega desde: taberna.",
+  "flags": [],
+  "t": 17.9,
+  "err": null
+ },
+ {
+  "a": "¿Encontré algo?",
+  "intencion": "explorar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "En la chimenea de la taberna has encontrado una llave antigua. La llave está empañada y tiene una empuñadura tallada con un rostro que parece una mezcla entre un humano y un gato. Parece que podría abrir alguna puerta en el edificio, pero no estás seguro de qué lugar podría ser. Tienes: llave antigua\n\n¿Qué harás?",
+  "flags": [],
+  "t": 17.4,
+  "err": null
+ },
+ {
+  "a": "Lo recojo.",
+  "intencion": "recoger",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Has recogido la llave antigua. La llave parece ser de alguna puerta importante en la taberna o en algún lugar cercano. ¿Qué harás ahora?",
+  "flags": [],
+  "t": 8.6,
+  "err": null
+ },
+ {
+  "a": "¿Qué llevo?",
+  "intencion": "pregunta_estado",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Llevas: espada oxidada, pocion de curacion, llave antigua. En la taberna, la luz cálida y parpadeante de las velas ilumina las caras sonrientes de los clientes, mientras el aroma a estofado aromático y maderas viejas se mezcla con el susurro del fuego crepitando en la chimenea.",
+  "flags": [],
+  "t": 2.2,
+  "err": null
+ },
+ {
+  "a": "Examino la chimenea otra vez.",
+  "intencion": "explorar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Examinas detenidamente la chimenea y notas que los ladrillos en el interior parecen tener una configuración un poco diferente. Al tocarlos, descubres que pueden moverse, revelando un pequeño canalón secreto que conduce a una especie de almacén subterráneo.",
+  "flags": [],
+  "t": 16.8,
+  "err": null
+ },
+ {
+  "a": "Busco una puerta trasera.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Buscas una puerta trasera en la taberna, pero no encuentras ninguna obvia. Goruk el tabernero, que está atareado sirviendo a los clientes, no te presta mucha atención. Decides que el mejor camino es usar la llave antigua que has recogido para explorar más a fondo. Descubres un oscuro y húmedo pasadizo subterráneo que se extiende detrás de la taberna, conduciendo a una área desconocida. El olor a desechos y la humedad son inconfundibles en este lugar. Al entrar, notas que el pasadizo es estrecho y empinado, iluminado apenas por la tenue luz que se filtra desde la taberna. Descubres un lugar nuevo: alcantarillado_subterráneo (Un oscuro y húmedo pasadizo subterráneo que se extiende detrás de la taberna, conduciendo a una área desconocida. El olor a desecho y la humedad son inconfundibles en este lugar.). Se llega desde: taberna.",
+  "flags": [],
+  "t": 25.6,
+  "err": null
+ },
+ {
+  "a": "Entro por ahí.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "alcantarillado_subterráneo",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Llegas a alcantarillado subterráneo. Llegas al oscuro y húmedo pasadizo subterráneo que se extiende detrás de la taberna, conduciendo a una área desconocida. El olor a desechos y la humedad son inconfundibles en este lugar.",
+  "flags": [],
+  "t": 33.8,
+  "err": null
+ },
+ {
+  "a": "¿Dónde estoy?",
+  "intencion": "pregunta_estado",
+  "pasos": [],
+  "antes": {
+   "location": "alcantarillado_subterráneo",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "alcantarillado_subterráneo",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Estás en alcantarillado subterráneo. Desde aquí puedes ir a: taberna. En el oscuro y húmedo pasadizo subterráneo, el eco de gotas caídas resuena mientras se cierne una densa penumbra.",
+  "flags": [],
+  "t": 2.1,
+  "err": null
+ },
+ {
+  "a": "Vuelvo a la taberna.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "alcantarillado_subterráneo",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Llegas de nuevo a la taberna, donde el fuego crepita en la chimenea y el olor a estofado cálidamente perfuma el aire. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira brevemente antes de volver a su tarea de servir a los clientes.",
+  "flags": [],
+  "t": 15.0,
+  "err": null
+ },
+ {
+  "a": "¿Qué sitios nuevos hay?",
+  "intencion": "pregunta_memoria",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "En la taberna, has descubierto dos nuevos lugares: la canalización secreta en la chimenea y el alcantarillado subterráneo. Estos lugares ofrecen caminos alternativos y posiblemente información valiosa. 1. Canalización secreta en la chimenea: Se encuentra conectada a la taberna y te permite explorar áreas ocultas y posiblemente recuperar hierbas o objetos escondidos. 2. Alcantarillado subterráneo: Este oscuro y húmedo pasadizo subterráneo se extiende detrás de la taberna, conduciendo a áreas desconocidas y posiblemente a nuevos desafíos. Puedes usar la llave antigua que encontraste en la taberna para abrir puertas en la canalización secreta, o seguir el oscuro pasadizo del alcantarillado subterráneo.",
+  "flags": [],
+  "t": 17.6,
+  "err": null
+ },
+ {
+  "a": "Busco al tabernero.",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "resp": "Hablas con Goruk el tabernero.\nGoruk el tabernero: \"Aquí mismo, ¿en qué te sirvo, viajero?\"",
+  "flags": [],
+  "t": 3.3,
+  "err": null
+ },
+ {
+  "a": "Recojo la antorcha.",
+  "intencion": "recoger",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua",
+    "antorcha"
+   ]
+  },
+  "resp": "Recolijes la antorcha del suelo de la taberna. La luz cálida y tenue ilumina tu camino, preparándote para lo que venga.",
+  "flags": [],
+  "t": 14.6,
+  "err": null
+ },
+ {
+  "a": "Recojo la antorcha.",
+  "intencion": "recoger",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "llave antigua",
+    "antorcha"
+   ]
+  },
+  "resp": "No hay 'antorcha' aqui. Objetos disponibles: ninguno",
+  "flags": [],
+  "t": 2.9,
+  "err": null
+ }
+]

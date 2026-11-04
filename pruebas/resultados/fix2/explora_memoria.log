@@ -1,0 +1,49 @@
+[hablar] Hablo con Goruk sobre el bosque. (4s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Dicen que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con oro, pero no te recomendaría acercarte."'
+[mover] Voy a la plaza. (25s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo, donde una fuente de piedra centra la atención de los pocos transeúntes que se encuentran allí. Elena la comerciante, una figura conocida, está sentada en una banca cercana, examinando unos productos con cuidado. ¿Qué te gustaría hacer en la plaza?'
+[comprar] Le compro una poción a Elena. (3s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'})]
+   plaza→plaza hp 20→20 oro 15→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+[mover] Voy al bosque. (25s) []
+   pasos=[('move_to', {'destination': 'bosque'}), ('check_state', {})]
+   plaza→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Llegas al bosque, donde los árboles altos bloquean la luz del sol, creando un ambiente sombrío y silencioso. Se escuchan ruidos entre la maleza, posiblemente algún animal o el viento soplando a través de las ramas. Encuentras hierbas medicinales en el suelo. No ves a nadie más. ¿Qué deseas hacer?'
+[recoger] Recojo las hierbas medicinales. (59s) []
+   pasos=[('pick_up_item', {'item_name': 'hierbas medicinales'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Recolijes las hierbas medicinales y las añades a tu inventario. Se escuchan ruidos entre la maleza, posiblemente algún animal o el viento soplando a través de las ramas.'
+[pregunta_memoria] ¿Qué compré y a quién? (13s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Compraste una poción de curación a Elena la comerciante por 10 monedas de oro. No mencionaste a quién le compraste las hierbas medicinales, pero las has añadido a tu inventario.'
+[pregunta_memoria] ¿A quién conocí hasta ahora? (24s) []
+   pasos=[('consult_world', {'topic': 'personajes_conocidos'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Hasta ahora, has conocido a Goruk el tabernero, quien te advirtió sobre un goblin centinela que vive en la cueva al fondo del bosque y guarda un cofre con oro. Goruk no te recomienda acercarte a esa cueva. ¿Qué deseas hacer ahora?'
+[pregunta_dialogo] ¿Qué me advirtió Goruk? (7s) []
+   pasos=[('consult_world', {'topic': 'Goruk'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Goruk el tabernero te dijo: "Dicen que en la cueva al fondo del bosque vive un goblin centinela que guarda un cofre con oro, pero no te recomendaría acercarte."'
+[pregunta_memoria] ¿Dónde estaban las hierbas? (40s) []
+   pasos=[('consult_world', {'topic': 'hierbas medicinales'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Las hierbas medicinales que compraste están en tu inventario. Goruk el tabernero te advirtió sobre un goblin centinela que vive en la cueva al fondo del bosque y guarda un cofre con oro, pero no te recomendaría acercarte a esa cueva.'
+[pregunta_memoria] ¿Qué hice primero? (39s) []
+   pasos=[('check_state', {}), ('consult_world', {'topic': 'conocidos'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Primero hablaste con Goruk el tabernero, quien te advirtió sobre un goblin centinela que vive en la cueva al fondo del bosque y guarda un cofre con oro. Luego, te moviste de la taberna a la plaza, compraste una poción de curación a Elena la comerciante por 10 de oro, y finalmente regresaste al bosque donde te encontraste con las hierbas medicinales'
+[pregunta_memoria] Resume en una frase lo que hice. (59s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Primero hablaste con Goruk el tabernero, quien te advirtió sobre un goblin centinela que vive en la cueva al fondo del bosque y guarda un cofre con oro, pero no te recomendaría acercarte. Finalmente, regresaste al bosque donde recogiste hierbas medicinales.'
+[pregunta_memoria] ¿Cuántas veces cambié de lugar? (34s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Cambiaste de lugar dos veces. Primero, te moviste de la taberna a la plaza, luego de la plaza al bosque, y finalmente recogiste hierbas medicinales en el bosque.'
+EXIT 0

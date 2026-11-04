@@ -1,0 +1,48 @@
+[hablar] ... (6s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Dicen que una bruja vive en el pantano más allá del bosque, pero el bosque es peligroso de noche. Mejor evita la oscuridad si puedes."'
+[mover] I go to the plaza. (46s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. Elena la comerciante, una mujer astuta y amable, está sentada en una banca charlando con algunos lugareños. ¿Qué deseas hacer en la plaza?'
+[otra] asdfgh qwerty (18s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Ella te ve y te saluda amablemente.'
+[pregunta_estado] ¿Qué hora es? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Es mañana: la luz de la mañana entra clara. La plaza central del pueblo se ilumina con la tenue luz matutina, proyectando sombras danzantes sobre la piedra de la fuente, mientras los primeros pájaros cantores se asoman entre los árboles.'
+[otra] Bailo en la mesa. (46s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te mira con curiosidad, esperando que hagas algo más.'
+[pregunta_estado] Me duermo un rato. (6s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en plaza. Aquí hay: ningún objeto. Personajes: Elena la comerciante. Llevas: espada oxidada, pocion de curacion. La plaza central resplandece bajo el brillante sol de mediodía, proyectando sombras danzantes sobre la piedra pulida de la fuente, mientras el aire está perfumado por la hierba recién cortada y las flores silvestres que bordean los'
+[atacar] Le robo el oro a Goruk. (66s) ['LENTO(66s)']
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante, sentada en una banca de la plaza, te observa con una mezcla de curiosidad y desconfianza mientras te acercas. Intentas sacarle oro, pero ella es astuta y rápidamente se pone en guardia.'
+[otra] Grito muy fuerte. (45s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Gritas con fuerza en la plaza, pero Elena la comerciante te mira con sorpresa. Ella no se mueve ni se pone en guardia; en cambio, sigue sentada en la banca, charlando con algunos lugareños que pasan por allí.'
+[soltar] Lanzo la espada al fuego. (5s) []
+   pasos=[('drop_item', {'item_name': 'Lanzo la espada al fuego.'}), ('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Sueltas espada oxidada: queda en el suelo (plaza).'
+[pregunta_estado] ¿Qué llevo? (3s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Llevas: pocion de curacion. La plaza central resplandece bajo el brillante cielo de mediodía, donde la luz cálida y dorada baña las piedras de la fuente, creando sombras danzantes mientras un suave zumbido de conversaciones y risas fluye desde los alrededores.'
+[hablar] Le pregunto a Goruk si me vio bailar. (5s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Goruk el tabernero no está aquí (lo encuentras en taberna).'
+[mover] Quiero salir de la aventura. (12s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Estás en plaza. La plaza central del pueblo. Una fuente de piedra en el centro.'

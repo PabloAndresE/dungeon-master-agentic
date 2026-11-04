@@ -1,0 +1,82 @@
+sistema,tipo,accion,respuesta,faithfulness,menciona_goblin,se_abstiene,inventa,precio_10,no_vendio,compra_real,se_contradice,pista_creada,lugar_creado,pista_confirmada
+Baseline,info,Le pregunto a Goruk qué sabe sobre la cueva.,"Goruk, el tabernero, levanta una ceja y se rascó la barba mientras te mira de arriba abajo. ""La cueva, eh? Eso suena peligroso. No suelo hablar mucho de los asuntos que ocurren allí. Pero dicen que el Goblin Malvado vive escondido ahí dentro, causando problemas a los aldeanos. Muchos valientes han intentado derrotarlo, pero ninguno ha vuelto a contar su historia.""",0.0,True,,,,,,,,,
+Baseline,limite,Le pregunto a Goruk cómo derrotar al dragón.,"Goruk te mira con ojos desorbitados y luego ríe suavemente, casi como si hubiera escuchado una broma personal. ""Dragón, eh? Eso es más de lo que normalmente trato en la taberna, chaval. Los dragones son leyendas, no algo que uno ve todos los días. Pero, si quieres saber, el viejo Bron, en la herrería, podría darte algunos consejos. Dicen que él ha enfrentado a dragones en su tiempo.""",0.0,,True,False,,,,,,,
+Baseline,mover,Voy a la plaza.,"Mientras sales de la taberna, el aire fresco de la plaza te golpea en la cara, llenándote de un ligero polvo que levanta un viento suave. En la plaza, la gente camina con paso rápido, hablando entre sí y mirándote de reojo, como si esperaran que hicieras algo drástico. A tu derecha está la herrería, y a tu izquierda, el bosque se extiende hacia el norte, oscuro y misterioso.
+
+
+
+¿Qué quieres hacer en la plaza?",,,,,,,,,,,
+Baseline,negociacion,Le pregunto a Elena si me deja la poción en 5 monedas.,"Elena, una anciana agradable con una sonrisa amigable, te mira y asiente con un gesto entendible. ""Claro, chico. Aquí tienes la poción de curación. No te subestimes, ¿eh? ¡Y avísame si la necesitas!""
+
+Te das cuenta de que has ganado 5 oros al venderle la poción de curación a Elena.
+
+
+
+Ahora que tienes un poco más de oro, ¿qué te gustaría hacer? El bosque se extiende hacia el norte desde la plaza, y la herrería está a tu este. ¿Qué te decides?",0.0,,,,False,True,,,,,
+Baseline,compra,Le compro una poción a Elena.,"Elena asiente amablemente y te entrego la poción de curación. ""Espero que te ayude en tus aventuras. Hazlo con cuidado, ¿eh?""
+
+Ahora tienes una poción de curación adicional en tu inventario. 
+
+
+
+¿Qué harás a continuación? El bosque se extiende hacia el norte desde la plaza, y la herrería está a tu este. ¿Te decides a explorar el bosque o visitar a Bron en la herrería?",,,,,,,False,,,,
+Baseline,mover,Vuelvo a la taberna.,"Vuelves a la taberna, sintiendo la familiaridad de la atmósfera cálida y el olor a cerveza y tabaco que se difumina en el aire. Goruk te mira con curiosidad mientras tomas asiento.
+
+""Ya estás de vuelta, ¿eh? ¿Todo bien? ¿Necesitas algo más?"" pregunta Goruk, poniendo una mano amistosa sobre tu hombro.
+
+
+
+¿Qué te gustaría hacer en la taberna? ¿Quieres hablar con Goruk sobre algo en particular, buscar información, o simplemente tomar algo?",,,,,,,,,,,
+Baseline,consistencia,Le vuelvo a preguntar a Goruk qué hay en la cueva.,"Goruk te mira de nuevo con una ceja levantada, evidentemente recordando tu anterior pregunta. ""Ya te dije, chaval, la cueva es un lugar peligroso. El Goblin Malvado vive allí, causando problemas a los aldeanos. Algunos dicen que se ha vuelto más temible recientemente. ¿Realmente quieres meter la nariz en algo así?""
+
+
+
+Goruk parece preocupado pero curioso al ver tu interés. ¿Te decides a tomar su consejo y desistir, o te decides a investigar más sobre el Goblin Malvado en la cueva?",0.0,,,,,,,False,,,
+Baseline,pista_mencion,Le pregunto a Goruk si sabe algo de una bruja.,"Goruk frunce el ceño, pensativo, mientras juega con la pulsera de plata que lleva alrededor de su muñeca. ""Ah, la bruja. Esa sí que es otra historia. Algunos dicen que vive en el bosque, cerca de la cueva. Se supone que es una anciana poderosa, pero la gente no habla mucho de ella. Algunos temen que sea más peligrosa que el Goblin Malvado.""
+
+
+
+¿Qué te decides a hacer ahora? ¿Quieres investigar más sobre la bruja, o te decides a hablar con Bron en la herrería?",,,,,,,,,False,,
+Baseline,pista_seguir,Voy al pantano a buscar a la bruja.,"Lamentablemente, el pantano no está conectado a ninguna de las ubicaciones que has explorado hasta ahora. Parece que debes encontrar una manera de llegar al pantano desde alguna de las ubicaciones existentes, o la bruja podría estar en el bosque, cerca de la cueva.
+
+¿Quieres:
+
+1. **Explorar más el bosque**: Podrías caminar hacia el norte desde la plaza, donde se encuentra la cueva.
+2. **Hablar con Bron en la herrería**: Puede que Bron tenga más información sobre la bruja.
+3. **Volver a la taberna**: Puedes hablar con Goruk sobre la bruja nuevamente o buscar otra información.
+
+¿Qué te decides?",,,,,,,,,,False,
+Baseline,pista_confirmar,Busco a la bruja entre la niebla.,"Decides adentrarte en el bosque, donde la niebla se ha extendido densamente, dificultando la visibilidad. El suelo está mojado y resbaladizo, y los árboles parecen agitarse con un viento sutil. La quietud del bosque se rompe solo con el crujir de tu ropa al caminar y el susurro de las hojas.
+
+Después de un rato, la niebla se hace más densa y empiezas a distinguir formas oscuras entre los árboles. Parece que estás cerca de la cueva, pero también puedes ver una figura anciana sentada junto a un pequeño río de agua cristalina que se filtra entre las rocas.
+
+
+
+La figura se gira hacia ti, revelando el rostro de una anciana rodeado de un halo de luz tenue. Es la bruja, y su mirada es penetrante y sabia.
+
+""¿Qué buscas, joven aventurero?"", pregunta la bruja en un tono sereno.
+
+¿Qué le respondes a la bruja?",,,,,,,,,,,False
+Agente v1,info,Le pregunto a Goruk qué sabe sobre la cueva.,CallCheckState(),0.0,False,,,,,,,,,
+Agente v1,limite,Le pregunto a Goruk cómo derrotar al dragón.,CallCheckState(),0.0,,True,False,,,,,,,
+Agente v1,mover,Voy a la plaza.,"MoveTo(""plaza"")",,,,,,,,,,,
+Agente v1,negociacion,Le pregunto a Elena si me deja la poción en 5 monedas.,CallCheckState(),0.0,,,,False,True,,,,,
+Agente v1,compra,Le compro una poción a Elena.,"Pick_up_item(""poción"")",,,,,,,False,,,,
+Agente v1,mover,Vuelvo a la taberna.,"MoveTo(""taberna"")",,,,,,,,,,,
+Agente v1,consistencia,Le vuelvo a preguntar a Goruk qué hay en la cueva.,CallCheckState(),0.0,,,,,,,False,,,
+Agente v1,pista_mencion,Le pregunto a Goruk si sabe algo de una bruja.,CallCheckState(),,,,,,,,,False,,
+Agente v1,pista_seguir,Voy al pantano a buscar a la bruja.,"MoveTo(""pantano"")",,,,,,,,,,False,
+Agente v1,pista_confirmar,Busco a la bruja entre la niebla.,CallCheckState(),,,,,,,,,,,False
+Multi v3,info,Le pregunto a Goruk qué sabe sobre la cueva.,"Hablas con Goruk el tabernero.
+Goruk el tabernero: ""Dicen que en la cueva, al fondo del bosque, vive un goblin centinela que guarda un cofre con oro. Pero el bosque es peligroso de noche, se oyen ruidos entre la maleza.""",1.0,True,,,,,,,,,
+Multi v3,limite,Le pregunto a Goruk cómo derrotar al dragón.,"Hablas con Goruk el tabernero.
+Goruk el tabernero: ""No me han preguntado nunca a mí sobre dragones, así que mejor busca a alguien que sepa de esas cosas.""",0.3333333333333333,,False,False,,,,,,,
+Multi v3,mover,Voy a la plaza.,"Llegas a la plaza central del pueblo. La fuente de piedra en el centro es el punto focal de la plaza. Elena la comerciante, una mujer de aspecto astuto pero amable, está sentada en una mesa cerca de la fuente, atendiendo a posibles clientes. Preguntas a Elena sobre el dragón.",,,,,,,,,,,
+Multi v3,negociacion,Le pregunto a Elena si me deja la poción en 5 monedas.,Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.,0.5,,,,True,False,,,,,
+Multi v3,compra,Le compro una poción a Elena.,No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.,,,,,,,False,,,,
+Multi v3,mover,Vuelvo a la taberna.,"El fuego crepita en la chimenea, dándole a la taberna un ambiente cálido y acogedor. Goruk el tabernero, un enano tabernero gruñón pero de buen corazón, te mira de manera cortante.",,,,,,,,,,,
+Multi v3,consistencia,Le vuelvo a preguntar a Goruk qué hay en la cueva.,"Goruk el tabernero: ""Ya te dije que dicen que en la cueva vive un goblin que guarda un cofre con oro. Pero el bosque es peligroso de noche, así que cuidado con lo que hagas.""",0.75,,,,,,,False,,,
+Multi v3,pista_mencion,Le pregunto a Goruk si sabe algo de una bruja.,"Hablas con Goruk el tabernero.
+Goruk el tabernero: ""Dicen que la bruja puede curar cualquier mal, pero a cambio de un favor. No te lo recomendaría, pero si quieres saber más, podrías preguntarle a Bron, el herrero. A él le gusta charlar de esas cosas.""",,,,,,,,,True,,
+Multi v3,pista_seguir,Voy al pantano a buscar a la bruja.,"No puedes cruzar directamente al pantano desde la taberna. Aparece un personaje nuevo en taberna: Sylvari la Bruja (Una anciana vestida con ropa hecha de hierbas y lúgubres misterios, Sylvari la Bruja reside en el pantano cercano. Con ojos que parecen reflejar el cielo nocturno y una varita de enredaderas en su mano, es conocida por su sabiduría y sus hechizos oscuros. [SRD: Commoner — CA 10, PG 4, daño 1d4]).",,,,,,,,,,False,
+Multi v3,pista_confirmar,Busco a la bruja entre la niebla.,"Hablas con Goruk el tabernero, quien te menciona que la bruja Sylvari reside en el pantano cercano. Aunque el bosque es peligroso de noche, Goruk sugiere que podrías buscar a Sylvari en el pantano.",,,,,,,,,,,True

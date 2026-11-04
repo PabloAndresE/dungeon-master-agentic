@@ -1,0 +1,49 @@
+[pregunta_estado] ... (1s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en taberna. Aquí hay: antorcha. Personajes: Goruk el tabernero. Llevas: espada oxidada, pocion de curacion. La taberna está bañada en una cálida luz amarillenta que baila en las caras de los clientes, mientras el crujir del fuego en la chimenea se mezcla con el murmullo suave de conversaciones y el aroma apetitoso de un estofado que cocina le'
+[mover] I go to the plaza. (16s) []
+   pasos=[]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. La fuente de piedra en el centro refleja la luz del sol que se filtra entre las nubes, creando patrones cálidos en el adoquinado. Elena la comerciante, una mujer astuta y amable, está sentada en una banca cerca de la fuente, revisando sus mercancías. ¿Qué deseas hacer?'
+[otra] asdfgh qwerty (14s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te saluda amablemente mientras inspecciona sus mercancías. La fuente de piedra en el centro de la plaza refleja la luz del sol, creando patrones cálidos en el adoquinado. ¿Qué deseas hacer? Puedes hablar con Elena, mirar alrededor de la plaza, o ir a la taberna, herrería o bosque.'
+[pregunta_estado] ¿Qué hora es? (3s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Es mañana: la luz de la mañana entra clara. La plaza central del pueblo brilla con la tenue luz del atardecer, iluminada por las luces de las farolas que se adivinan alrededor.'
+[otra] Bailo en la mesa. (8s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No puedes bailar en la mesa, ya que no hay ninguna mesa en la plaza. Elena la comerciante te mira con curiosidad mientras sigue inspeccionando sus mercancías. ¿Quieres hablar con ella, buscar un lugar para sentarte, o ir a otro lugar del pueblo?'
+[otra] Me duermo un rato. (26s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te saluda amablemente mientras inspecciona sus mercancías. La fuente de piedra en el centro de la plaza refleja la luz del sol, creando patrones cálidos en el adoquinado. ¿Qué deseas hacer? Puedes hablar con Elena, mirar alrededor de la plaza, o ir a la taberna, herrería o bosque.'
+[atacar] Le robo el oro a Goruk. (9s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No puedes robar el oro a Goruk, ya que él no está en la plaza. Goruk el tabernero está en la taberna, y no hay manera directa de llegar a él desde la plaza sin moverte primero a la taberna. ¿Deseas ir a la taberna o hacer algo diferente?'
+[otra] Grito muy fuerte. (15s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → '¿Quieres disculparte con ella, hablar de algo en particular, o ir a otro lugar del pueblo?'
+[otra] Lanzo la espada al fuego. (25s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Lanzas tu espada oxidada al suelo de la plaza, cerca de la fuente de piedra. La espada se calienta rápidamente al contacto con el calor del sol, pero no hay ningún efecto visible más allá del calentamiento y las chispas que se elevan.'
+[pregunta_estado] ¿Qué llevo? (2s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llevas: espada oxidada, pocion de curacion. La plaza central resplandece bajo el resplandor de los faroles de aceite, proyectando sombras danzantes sobre la piedra pulida de la fuente, mientras el suave chisporroteo del agua rompe el silencio con su melodía relajante.'
+[pregunta_memoria] Le pregunto a Goruk si me vio bailar. (15s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Preguntas a Elena la comerciante sobre si te vio bailar. Elena te mira con curiosidad y luego sonríe.'
+[otra] Quiero salir de la aventura. (17s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena te mira con una ceja levantada y luego se ríe suavemente.'
+EXIT 0

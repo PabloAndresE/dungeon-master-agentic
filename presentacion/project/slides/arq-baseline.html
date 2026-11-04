@@ -1,0 +1,24 @@
+<section id="arq-baseline" data-transition="fade" style="background:#f5f1e8;color:#1c1f26;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;color:#2a78d6;letter-spacing:4px;text-transform:uppercase;font-weight:600">Arquitectura 1 · Baseline</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">Un LLM con todo el historial</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:72px;align-items:center">
+<div style="width:720px;display:flex;flex-direction:column;align-items:center;gap:14px">
+<div style="width:720px;background:#fbf9f4;border:2px solid #c9bfa8;border-radius:14px;padding:20px 28px"><p style="font-size:28px;text-align:center"><b>Jugador</b> · acción en texto libre</p></div>
+<x-shape kind="arrow-down" style="background:#2a78d6;width:28px;height:44px"></x-shape>
+<div style="width:720px;background:#fbf9f4;border:2px solid #c9bfa8;border-radius:14px;padding:20px 28px"><p style="font-size:28px;text-align:center"><b>Mensajes</b> · system prompt (mundo, reglas, combate, precios) + historial completo</p></div>
+<x-shape kind="arrow-down" style="background:#2a78d6;width:28px;height:44px"></x-shape>
+<div style="width:720px;background:#2a78d6;border-radius:14px;padding:20px 28px"><p style="font-size:28px;text-align:center;color:#ffffff"><b>qwen2.5 7B</b> · temperatura 0.7 · 1 llamada</p></div>
+<x-shape kind="arrow-down" style="background:#2a78d6;width:28px;height:44px"></x-shape>
+<div style="width:720px;background:#fbf9f4;border:2px solid #c9bfa8;border-radius:14px;padding:20px 28px"><p style="font-size:28px;text-align:center"><b>Narración</b></p></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600">Memoria</h3><p style="font-size:28px;line-height:1.4;color:#3e4450">La propia conversación, en un contexto de 32k tokens.</p></div>
+<div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600">Estado del juego</h3><p style="font-size:28px;line-height:1.4;color:#3e4450">No existe fuera del texto: vida, oro e inventario los «recuerda» el modelo.</p></div>
+<div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600">Costo</h3><p style="font-size:28px;line-height:1.4;color:#3e4450">Una llamada por jugada, ~1 s.</p></div>
+<div style="display:flex;flex-direction:column;gap:8px"><h3 style="font-size:32px;font-weight:600">Papel</h3><p style="font-size:28px;line-height:1.4;color:#3e4450">La referencia: lo que da un buen prompt, sin ingeniería alrededor.</p></div>
+</div>
+</div>
+<aside>(≈15 s) La línea base: un LLM con el mundo y las reglas en el system prompt y todo el historial. Una llamada por jugada; el estado lo tiene que recordar el modelo.</aside>
+</section>

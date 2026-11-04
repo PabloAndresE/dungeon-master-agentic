@@ -1,0 +1,52 @@
+[explorar] Examino la chimenea de la taberna. (58s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas detenidamente la chimenea de la taberna y notas que el ladrillo más interno parece estar ligeramente desgastado. Podría haber algo escondido allí. Sigues un camino que conduce directamente desde la chimenea hasta un nicho oculto, que no estaba en tu vista inicial. Descubres un lugar nuevo: nicho_en_la_chimenea. En este nicho, el aire es fr'
+[pregunta_memoria] ¿Encontré algo? (2s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Sí: encontraste un lugar nuevo: nicho en la chimenea.'
+[recoger] Lo recojo. (3s) []
+   pasos=[('pick_up_item', {'item_name': 'nicho_en_la_chimenea'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → "No hay eso aqui. Objetos disponibles: ['antorcha']"
+[pregunta_estado] ¿Qué llevo? (6s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llevas: espada oxidada, pocion de curacion. En la taberna, la tenue luz matutina filtrase a través de las cortinas empolvadas, iluminando tenues sombras en las mesas.'
+[explorar] Examino la chimenea otra vez. (26s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas la chimenea con mayor atención y notas que el ladrillo más interno está ligeramente desgastado, como si algo pudiera haberse escondido ahí. El nicho es frío y húmedo, y parece que el aire circula con cierta facilidad.'
+[mover] Busco una puerta trasera. (32s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No hay puerta trasera en la taberna. Sigues en la misma sala, rodeado del olor a estofado y el crepitar del fuego en la chimenea. El nicho que examinaste en la chimenea sigue estando frío y húmedo, y parece que el aire circula con cierta facilidad.'
+[mover] Entro por ahí. (27s) []
+   pasos=[('move_to', {'destination': 'nicho_en_la_chimenea'})]
+   taberna→nicho_en_la_chimenea hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas al nicho en la chimenea y lo examinas con mayor detenimiento. El ladrillo más interno está ligeramente desgastado, como si algo pudiera haberse escondido allí. El nicho es frío y húmedo, y el aire circula con cierta facilidad.'
+[pregunta_estado] ¿Dónde estoy? (5s) []
+   pasos=[('check_state', {})]
+   nicho_en_la_chimenea→nicho_en_la_chimenea hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en nicho en la chimenea. Desde aquí puedes ir a: taberna. En el nicho de la chimenea, la luz cálida del mediodía se filtra a través de las grietas del muro, creando sombras danzantes que resaltan el desgaste suave del ladrillo interno.'
+[mover] Vuelvo a la taberna. (27s) []
+   pasos=[('move_to', {'destination': 'taberna'}), ('check_state', {})]
+   nicho_en_la_chimenea→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas de nuevo a la taberna, donde el olor a estofado y el crujir del fuego en la chimenea te reciben. Goruk el tabernero te mira de reojo, probablemente notando tu inspección detallada de la chimenea. Unas cuerdas de antorcha colgadas en la pared añaden un toque de luz cálida a la sala.'
+[pregunta_memoria] ¿Qué sitios nuevos hay? (7s) []
+   pasos=[('consult_world', {'topic': 'lugares'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Descubriste 1 lugar nuevo: nicho en la chimenea (se llega desde taberna).'
+[hablar] Busco al tabernero. (6s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "No busques a nadie, que aquí solo soy yo, el tabernero."'
+[recoger] Recojo la antorcha. (18s) []
+   pasos=[('pick_up_item', {'item_name': 'antorcha'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Recoges la antorcha y la sopesas en la mano. Parece antigua y pesada, pero podría ser útil en situaciones oscuros.'
+[recoger] Recojo la antorcha. (5s) []
+   pasos=[('pick_up_item', {'item_name': 'antorcha'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Ya llevas antorcha.'

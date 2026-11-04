@@ -1,0 +1,25 @@
+<section id="problema" data-transition="fade" style="background:#f5f1e8;color:#1c1f26;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:36px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;color:#a3471a;letter-spacing:4px;text-transform:uppercase;font-weight:600">El problema</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">Un LLM solo narra bien, pero no lleva la cuenta</h2>
+<p style="font-size:28px;line-height:1.4;color:#3e4450">Nota de la línea base (qwen2.5 7B con historial) dada por un <b>juez LLM, qwen2.5 72B</b>, de 0 a 100. Promedio de 3 corridas.</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:36px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<p style="font-family:'EB Garamond', Georgia, serif;font-size:112px;font-weight:600;line-height:1;color:#a3471a">35</p>
+<h3 style="font-size:32px;font-weight:600">en preguntas de reglas</h3>
+<p style="font-size:24px;line-height:1.45;color:#3e4450">4 turnos del hold-out 2, como «Según las reglas, ¿qué estadísticas tiene un lobo?». El juez compara con el texto oficial del SRD.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<p style="font-family:'EB Garamond', Georgia, serif;font-size:112px;font-weight:600;line-height:1;color:#a3471a">16</p>
+<h3 style="font-size:32px;font-weight:600">ante un movimiento imposible</h3>
+<p style="font-size:24px;line-height:1.45;color:#3e4450">Hold-out 3, en la herrería: «Intento cruzar directo al bosque». Responde «Sí, has llegado al bosque», aunque no hay camino.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#fbf9f4;border:1px solid #e1d9c6;border-radius:20px;padding:40px">
+<p style="font-family:'EB Garamond', Georgia, serif;font-size:112px;font-weight:600;line-height:1;color:#137a56">70</p>
+<h3 style="font-size:32px;font-weight:600">en narrativa</h3>
+<p style="font-size:24px;line-height:1.45;color:#3e4450">Rúbrica de narrativa del mismo juez, en los 26 turnos del hold-out 2. El estilo no es el problema: la consistencia sí.</p>
+</div>
+</div>
+<aside>(≈15 s) El problema. A la línea base, qwen 7B con historial, la califica un juez LLM de 72B de 0 a 100. Narra bien, 70, pero inventa reglas, 35, y ante un movimiento imposible responde «sí, has llegado al bosque»: 16.</aside>
+</section>

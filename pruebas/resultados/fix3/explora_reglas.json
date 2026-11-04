@@ -1,0 +1,383 @@
+[
+ {
+  "a": "Según las reglas, ¿qué tan peligroso es un dragón rojo adulto?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "Según las reglas, ¿qué tan peligroso es un dragón rojo adulto?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[monster:adult-red-dragon] Adult Red Dragon. Huge dragon, chaotic evil. CA 19, PG 256 (19d12), VD 17 (18000 XP). Velocidad: walk 40 "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Según las reglas, un dragón rojo adulto tiene una clase de armadura de 19, 19d12 puntos de golpe y un valor de desafío de 17 (18000 XP).",
+  "flags": [],
+  "t": 5.9,
+  "err": null
+ },
+ {
+  "a": "¿Y su aliento?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "El drago exhala fuego en un cono de 60 pies. Cada criatura en ese área debe hacer una tirada de salvación deDestreza DC 21, tomando 63 (18d6) puntos de daño de fuego en un fallo, o la mitad de ese daño en un éxito.",
+  "flags": [],
+  "t": 7.9,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto daño hace una bola de fuego?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Cuánto daño hace una bola de fuego?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[spell:fireball] Fireball. Conjuro de nivel 3, escuela Evocation. Tiempo 1 action, alcance 150 feet, duracion Instantaneous. Clases:"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Un objetivo recibe 8d6 daño de fuego en caso de una tirada de salvación fallida, o la mitad de ese daño en caso de una tirada de salvación exitosa.",
+  "flags": [],
+  "t": 6.1,
+  "err": null
+ },
+ {
+  "a": "¿A qué nivel se puede subir?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿A qué nivel se puede subir?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[rule:what-is-a-spell#spell-level] What Is a Spell? — Spell Level. Spell Level Every spell has a level from 0 to 9. A spell's level "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "El nivel mágico de un hechizo va desde 0 hasta 9. Los hechizos cantrip, simples pero poderosos hechizos que los personajes pueden lanzar casi de memoria, son de nivel 0.",
+  "flags": [],
+  "t": 8.3,
+  "err": null
+ },
+ {
+  "a": "¿Qué daño hace una espada larga a dos manos?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Qué daño hace una espada larga a dos manos?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[equipment:longsword] Longsword. Equipo (Weapon). Coste 15 gp. Peso 3 lb. Dano 1d8 Slashing. Dano a dos manos (versatil) 1d10 Slashi"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Una espada larga a dos manos hace daño cortante de 1d10.",
+  "flags": [],
+  "t": 4.5,
+  "err": null
+ },
+ {
+  "a": "¿Qué pasa si estoy envenenado?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Qué pasa si estoy envenenado?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[rule:poisons] Poisons. Regla. ## Poisons Given their insidious and deadly nature, poisons are illegal in most societies but are a f"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Al inicio de cada uno de tus turnos mientras estés envenenado de esta manera, tomas 3d6 daño venenoso. Al final de cada uno de tus turnos, puedes repetir la tirada de salvación. Con una tirada exitosa, el daño venenoso que tomes en turnos posteriores disminuye en 1d6. El envenenamiento termina cuando el daño disminuye a 0.",
+  "flags": [],
+  "t": 9.0,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto cura un descanso corto?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Cuánto cura un descanso corto?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[rule:resting#short-rest] Resting — Short Rest. Short Rest A short rest is a period of downtime, at least 1 hour long, during which "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Un personaje puede gastar uno o más dados de golpe al final de un descanso corto, hasta el número máximo de dados de golpe del personaje, que es igual al nivel del personaje. Para cada dado de golpe gastado de esta manera, el jugador tira el dado y suma el modificador de Constitución del personaje a él. El personaje recupera puntos de golpe iguales a la totalidad.",
+  "flags": [],
+  "t": 6.8,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto cuesta una cuerda de cáñamo según las reglas?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Cuánto cuesta una cuerda de cáñamo según las reglas?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[equipment:rope-hempen-50-feet] Rope, hempen (50 feet). Equipo (Adventuring Gear). Coste 1 gp. Peso 10 lb. Rope, whether made of hem"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Una cuerda de cáñamo cuesta 1 gp.",
+  "flags": [],
+  "t": 6.1,
+  "err": null
+ },
+ {
+  "a": "¿Dónde estoy?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una t"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Estás en taberna. Desde aquí puedes ir a: plaza, bosque. En la taberna, la luz cálida y difusa del mediodía se filtra a través de las cortinas, mientras un fuego crepita suavemente en la chimenea, proyectando sombras danzantes en las tablas de roble.",
+  "flags": [],
+  "t": 4.6,
+  "err": null
+ },
+ {
+  "a": "¿Qué es un beholder?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Qué es un beholder?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[equipment:emblem] Emblem. Equipo (Adventuring Gear). Coste 5 gp. A holy symbol is a representation of a god or pantheon. It might b"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No encontré eso en las reglas oficiales que tengo (SRD 5.1).",
+  "flags": [],
+  "t": 6.0,
+  "err": null
+ },
+ {
+  "a": "¿Qué hace la ventaja?",
+  "intencion": "pregunta_reglas",
+  "pasos": [
+   [
+    "consultar_reglas",
+    {
+     "consulta": "¿Qué hace la ventaja?"
+    },
+    "REGLAS OFICIALES (SRD 5.1):\n[rule:advantage-and-disadvantage] Advantage and Disadvantage. Regla. ## Advantage and Disadvantage Sometimes a special ability or sp"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Cuando ocurre esto, lanzas un segundo d20 cuando realizas el rollo. Usas el rollo más alto si tienes ventaja, y usas el rollo más bajo si tienes desventaja.",
+  "flags": [],
+  "t": 5.9,
+  "err": null
+ }
+]

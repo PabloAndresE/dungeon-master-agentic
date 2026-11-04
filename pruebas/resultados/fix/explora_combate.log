@@ -1,0 +1,65 @@
+[atacar] Ataco a Goruk. (26s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Goruk el tabernero te mira con desconfianza, pero no te ataca. No hay forma de atacar a Goruk en la taberna sin una acción previa, como desafiarlo o provocarlo de alguna manera.'
+[pregunta_estado] ¿Cuánta vida tengo? (4s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tienes 20/20 puntos de vida. La taberna resplandece con la tenue luz de la mañana, filtrándose a través de las cortinas de lana que apenas ocultan el resplandor del sol naciente.'
+[curarse] Me tomo la poción. (4s) []
+   pasos=[('use_potion', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Ya tienes la vida al maximo (20/20): guardas la pocion.'
+[curarse] Me tomo otra poción. (4s) []
+   pasos=[('use_potion', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Ya tienes la vida al maximo (20/20): guardas la pocion.'
+[mover] Voy al bosque. (22s) []
+   pasos=[('move_to', {'destination': 'bosque'}), ('check_state', {})]
+   taberna→bosque hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas al bosque, donde los árboles altos bloquean la luz del sol. Se escuchan ruidos entre la maleza, y hierbas medicinales pueden verse dispersas por el suelo.'
+[atacar] Ataco al lobo. (54s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Atacas al lobo con tu espada oxidada. Aunque la espada está oxidada, consigues un golpe certero que hace que el lobo se retire herido. El lobo huye hacia la cueva que se encuentra al oeste.'
+[mover] Voy a la cueva. (24s) []
+   pasos=[('move_to', {'destination': 'cueva'})]
+   bosque→cueva hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la cueva oscura y humeda, donde huesos viejos están esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te observa con ojos amenazantes desde una esquina.'
+[atacar] Ataco al goblin. (27s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Goblin centinela'})]
+   cueva→cueva hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Atacas al goblin centinela con tu espada oxidada. El golpe es fallido, pero el goblin ataca de vuelta y también falla su intento. El goblin centinela permanece en pie, desafiante.'
+[atacar] Ataco al goblin. (31s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Goblin centinela'})]
+   cueva→cueva hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No logras hundir tu espada oxidada en el goblin centinela, y este no te deja tan fácilmente. El goblin te lanza un ataque rápido, pero tampoco logra hacer daño. El goblin sigue en pie, vigilante y desconfiado.'
+[atacar] Ataco al goblin. (73s) ['LENTO(73s)']
+   pasos=[('attack_enemy', {'enemy_name': 'goblin centinela'})]
+   cueva→cueva hp 20→16 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Atacas al goblin centinela con tu espada oxidada. El golpe es certero y logras 5 de daño, reduciendo la salud del goblin a 16/20. El goblin te contraataca, pero falla y no logra causarte daño. El goblin sigue en pie, desafiante.'
+[atacar] Ataco al goblin. (79s) ['LENTO(79s)']
+   pasos=[('attack_enemy', {'enemy_name': 'Goblin centinela'})]
+   cueva→cueva hp 16→10 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tu ataque con espada oxidada resultó en un acierto, causando 1 punto de daño al Goblin centinela. El Goblin centinela contraataca y te causa 6 puntos de daño. El Goblin centinela sigue en pie, desafiante. Sigues en la cueva.'
+[atacar] Ataco al goblin. (48s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Goblin centinela'}), ('check_state', {})]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Atacas al Goblin centinela con tu espada oxidada. El golpe es certero, causando 1 punto de daño. El Goblin centinela cae derrotado, dejando caer un cofre con 50 monedas de oro a tu lado. El ambiente de la cueva se vuelve un poco más tranquilo con su derrota. El cofre contiene 50 monedas de oro, que añades a tu tesoro. La cueva sigue siendo un lugar'
+[pregunta_estado] ¿El goblin sigue vivo? (4s) []
+   pasos=[('check_state', {})]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en cueva. Aquí hay: cofre con 50 monedas de oro. Personajes: nadie. Llevas: espada oxidada, pocion de curacion. En la cueva, la tenue luz del atardecer se filtra a través de pequeñas grietas, iluminando tenue y azulácea la humedad que gotea del techo, mientras un olor a tierra mojada y algo podrida impregna el aire, mezclándose con el crujir '
+[atacar] Ataco al goblin otra vez. (7s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Goblin centinela'}), ('check_state', {})]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → "No hay enemigo 'Goblin centinela' aqui. NPCs: nadie"
+[recoger] Recojo lo que haya dejado el goblin. (30s) []
+   pasos=[('pick_up_item', {'item_name': 'cofre con 50 monedas de oro'})]
+   cueva→cueva hp 10→10 oro 15→65 inv ['espada oxidada', 'pocion de curacion']
+   → 'Recoljas las monedas del cofre que el Goblin centinela dejó caer. Añades estas 50 monedas a tu tesoro, aumentando tu oro total a 65 monedas de oro.'
+[pregunta_estado] ¿Cuánta vida me queda? (4s) []
+   pasos=[('check_state', {})]
+   cueva→cueva hp 10→10 oro 65→65 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tienes 10/20 puntos de vida. La penumbra se cuela a borbotones entre las grietas de la cueva, iluminando débilmente el suelo cubierto de humedad y huesos desgastados por el tiempo.'
+EXIT 0

@@ -1,0 +1,45 @@
+[pregunta_reglas] Según las reglas, ¿qué tan peligroso es un dragón rojo adulto? (31s) []
+   pasos=[('consultar_reglas', {'consulta': 'Según las reglas, ¿qué tan peligroso es un dragón rojo adulto?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Según las reglas, un dragón rojo adulto tiene una clase de armadura de 19, 256 puntos de golpe (19d12) y una resistencia a la enfermedad de 17 (18000 XP).'
+[pregunta_reglas] ¿Y su aliento? (40s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Acciones: Multiattack: El dragón puede usar su Presencia Aterrador. Luego hace tres ataques: uno con su mordedura y dos con sus garras.'
+[pregunta_reglas] ¿Cuánto daño hace una bola de fuego? (10s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Un objetivo recibe 8d6 daño de fuego en caso de una adivinanza fallida, o la mitad de ese daño en caso de una adivinanza exitosa.'
+[pregunta_reglas] ¿A qué nivel se puede subir? (10s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'El nivel mágico de un hechizo va desde 0 hasta 9. Los hechizos cantrips, simples pero poderosos hechizos que los personajes pueden lanzar casi de memoria, son de nivel 0.'
+[pregunta_reglas] ¿Qué daño hace una espada larga a dos manos? (5s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Una espada larga a dos manos hace daño cortante de 1d10.'
+[pregunta_reglas] ¿Qué pasa si estoy envenenado? (4s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Si estás envenenado, sufrirás los efectos del veneno en el momento en que tomes daño.'
+[pregunta_reglas] ¿Cuánto cura un descanso corto? (5s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Un descanso corto no proporciona recuperación de hit points según el texto oficial dado.'
+[pregunta_reglas] ¿Cuánto cuesta una cuerda de cáñamo según las reglas? (4s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Una cuerda de cáñamo cuesta 1 gp.'
+[pregunta_estado] ¿Dónde estoy? (4s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en taberna. Desde aquí puedes ir a: plaza, bosque. En la taberna, la luz cálida y parpadeante de las velas ilumina las caras sonrientes de los clientes mientras el aroma a estofado se diffumina por el aire, mezclándose con el susurro de conversaciones y el crujir de leña en la chimenea.'
+[pregunta_reglas] ¿Qué es un beholder? (4s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Un beholder es un monstruo con ojos múltiples en la parte superior de su cabeza, conocido por su habilidad para detectar magia y sus ataques letales con rayos láser.'
+[pregunta_reglas] ¿Qué hace la ventaja? (5s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Cuando tienes ventaja, debes lanzar dos dados 20 (2d20) y usar el resultado más alto.'
+EXIT 0

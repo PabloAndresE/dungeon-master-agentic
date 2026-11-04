@@ -1,0 +1,49 @@
+[hablar] ... (8s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Dicen que una bruja vive en el pantano más allá del bosque, pero el bosque es peligroso de noche. Bron el herrero viene cada noche a tomar cerveza, quizás te pueda recomendar algo."'
+[mover] I go to the plaza. (28s) []
+   pasos=[('move_to', {'destination': 'plaza'})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. La fuente de piedra centra la atención de los pocos comerciantes y transeúntes que aún están despiertos. Elena la comerciante, una mujer astuta y amable, te mira con curiosidad desde su puesto.'
+[otra] asdfgh qwerty (29s) ['DICE_LLEGAS_SIN_MOVER(plaza central)']
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central. Elena la comerciante, una mujer astuta y amable, te mira con curiosidad desde su puesto. No hay objetos destacados en el suelo, pero puedes notar que el ambiente es tranquilo y acogedor. ¿Qué deseas hacer?'
+[pregunta_estado] ¿Qué hora es? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Es mañana: la luz de la mañana entra clara. La plaza central resplandece bajo el tenue resplandor de la alborada, donde la luz dorada de los primeros rayos del sol baña la piedra lisa de la fuente, proyectando sombras bailarinas sobre la hierba still húmeda.'
+[otra] Bailo en la mesa. (55s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te mira con una sonrisa amable mientras sigues tu danza. No hay ningún objeto en la mesa ni en la plaza que te permita usar en tu baile.'
+[pregunta_estado] Me duermo un rato. (6s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en plaza. Aquí hay: ningún objeto. Personajes: Elena la comerciante. Llevas: espada oxidada, pocion de curacion. La plaza central resplandece bajo el claror del mediodía, donde la luz dorada baña las piedras de la fuente, creando patrones danzantes en el suelo de adoquines.'
+[atacar] Le robo el oro a Goruk. (4s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Le robo el oro a Goruk.'})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → "No hay ningun enemigo asi aqui. Presentes: ['Elena la comerciante']"
+[otra] Grito muy fuerte. (74s) ['LENTO(74s)']
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Gritas muy fuerte en la plaza. Elena la comerciante te mira con sorpresa y vuelve a su trabajo. No hay ningún ruido más en la plaza. No lo ves en la plaza, pero él está a punto de llegar.'
+[soltar] Lanzo la espada al fuego. (46s) []
+   pasos=[('drop_item', {'item_name': 'Lanzo la espada al fuego.'})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Lanzas la espada oxidada al fuego que salpica la plaza. La espada se funde rápidamente, dejando una mancha oscura en el suelo. La espada oxidada queda en la plaza.'
+[pregunta_estado] ¿Qué llevo? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Llevas: pocion de curacion. La plaza central resplandece bajo el brillante cielo azul del mediodía, con rayos de sol que danzan entre las hojas verdes de los árboles circundantes, proyectando sombras danzantes sobre la piedra lisa de la fuente central.'
+[hablar] Le pregunto a Goruk si me vio bailar. (3s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Goruk el tabernero no está aquí (lo encuentras en taberna).'
+[mover] Quiero salir de la aventura. (30s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Goruk el tabernero, que estaba charlando con Elena la comerciante, te mira con sorpresa al notar tu gesto. Ella, al darse cuenta, te mira con curiosidad.'
+EXIT 0

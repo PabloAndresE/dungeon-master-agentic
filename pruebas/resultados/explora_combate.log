@@ -1,0 +1,65 @@
+[atacar] Ataco a Goruk. (31s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Goruk el tabernero te mira con desconfianza, pero no te ataca. No hay espacio para un combate aquí.'
+[pregunta_estado] ¿Cuánta vida tengo? (23s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tienes 20/20 puntos de vida. La taberna está bañada en una luz cálida y amarillenta, proveniente de las llamas que crepitan en la chimenea, mientras se difumina el aroma apetitoso de un estofado que se cocina en la cocina adjunta.'
+[curarse] Me tomo la poción. (244s) ['LENTO(244s)']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Bebes la poción y sientes cómo tus heridas sanan rápidamente. Recuperas 5 puntos de vida. Ahora tienes 20/20 HP. Goruk el tabernero te mira con una ceja levantada, probablemente preguntándose qué te ha llevado a beber una poción en su taberna.'
+[curarse] Me tomo otra poción. (5s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada']
+   → "No tienes pociones. Inventario: ['espada oxidada']"
+[mover] Voy al bosque. (68s) ['LENTO(68s)']
+   pasos=[]
+   taberna→bosque hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Llegas al bosque. Los árboles altos bloquean la luz, y se escuchan ruidos entre la maleza. Ves algunas hierbas medicinales en el suelo.'
+[atacar] Ataco al lobo. (188s) ['LENTO(188s)']
+   pasos=[]
+   bosque→bosque hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Observas al lobo y lo atacas con tu espada oxidada. Ves hierbas medicinales en el suelo, pero no hay forma de usarlas en este momento.'
+[mover] Voy a la cueva. (69s) ['LENTO(69s)']
+   pasos=[]
+   bosque→cueva hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Llegas a la cueva oscura y humeda, donde huesos viejos están esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te observa con ojos amenazantes. En un rincón, ves un cofre que contiene 50 monedas de oro.'
+[atacar] Ataco al goblin. (101s) ['LENTO(101s)']
+   pasos=[]
+   cueva→cueva hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque falla, y el goblin también falla su ataque. El goblin sigue en pie, amenazante.'
+[atacar] Ataco al goblin. (102s) ['LENTO(102s)']
+   pasos=[]
+   cueva→cueva hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada es un acierto, causando 1 punto de daño al Goblin centinela. El goblin falla su ataque contra ti. Continúa en pie, pero con su salud disminuida.'
+[atacar] Ataco al goblin. (55s) []
+   pasos=[]
+   cueva→cueva hp 20→16 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada falla. El Goblin centinela te ataca en respuesta, causándote 4 puntos de daño. Tu salud ahora es de 16/20 HP. El Goblin centinela sigue en pie, amenazante.'
+[atacar] Ataco al goblin. (57s) []
+   pasos=[]
+   cueva→cueva hp 16→10 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada es un acierto, causando 1 punto de daño al Goblin centinela. El Goblin centinela te contraataca, causándote 6 puntos de daño. Tu salud ahora es de 14/20 HP. El Goblin centinela sigue en pie, amenazante. El goblin sigue vigilante, sin mostrar signos de retirarse. No hay huecos en el suelo que puedas usar para esconder'
+[atacar] Ataco al goblin. (116s) ['LENTO(116s)']
+   pasos=[]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada es un acierto, causando 2 puntos de daño al Goblin centinela. El Goblin centinela falla su contraataque. Tu salud ahora es de 10/20 HP, mientras que el Goblin centinela tiene 3/7 HP restantes. El Goblin centinela sigue en pie, amenazante, pero agotado por la pelea. No hay huecos en el suelo que puedas usar para escon'
+[pregunta_memoria] ¿El goblin sigue vivo? (73s) ['LENTO(73s)']
+   pasos=[]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada es un acierto, causando 2 puntos de daño al Goblin centinela. El Goblin centinela falla su contraataque. Tu salud ahora es de 10/20 HP, mientras que el Goblin centinela tiene 5/7 HP restantes. El Goblin centinela sigue en pie, amenazante, pero agotado por la pelea. No hay huecos en el suelo que puedas usar para escon'
+[atacar] Ataco al goblin otra vez. (19s) []
+   pasos=[]
+   cueva→cueva hp 10→10 oro 15→15 inv ['espada oxidada']
+   → 'Tu ataque con la espada oxidada falla, dándole al Goblin centinela la oportunidad de contraatacar. El Goblin centinela también falla su contraataque. El Goblin centinela sigue en pie, con 3/7 HP restantes. No ha sufrido daño adicional en este turno. El Goblin centinela sigue amenazante, pero agotado por la pelea. ¿Qué decides hacer ahora?'
+[recoger] Recojo lo que haya dejado el goblin. (40s) []
+   pasos=[]
+   cueva→cueva hp 10→10 oro 15→65 inv ['espada oxidada']
+   → 'Recoljas el cofre con 50 monedas de oro. Tu bolsa de oro ahora contiene 65 monedas de oro. El Goblin centinela, aunque herido, sigue en pie y amenazante, con 3/7 HP restantes. La cueva está llena de huesos viejos esparcidos por el suelo, y el Goblin centinela sigue vigilando el cofre.'
+[pregunta_estado] ¿Cuánta vida me queda? (2s) []
+   pasos=[]
+   cueva→cueva hp 10→10 oro 65→65 inv ['espada oxidada']
+   → 'Tienes 10/20 puntos de vida. En la cueva, la penumbra apenas ilumina los huesos amarillentos que crujen bajo el suelo mojado y frío, mientras el eco de gotas de agua resuena en el aire húmedo y perfumado de musgo y tierra podrida.'
+EXIT 0

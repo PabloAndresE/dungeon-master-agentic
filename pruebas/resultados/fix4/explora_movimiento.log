@@ -1,0 +1,48 @@
+[mover] Voy al castillo. (43s) []
+   pasos=[('check_state', {}), ('move_to', {'destination': 'castillo'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No puedes ir directamente al castillo desde la taberna. Sigues en la taberna, donde Goruk el tabernero te mira con una ceja levantada, evidentemente sorprendido por tu intención.'
+[mover] Voy a la taberna. (2s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Ya estás en taberna.'
+[mover] Salgo a la calle. (22s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Saludas a Elena la comerciante, quien te mira con curiosidad al verte en la plaza. Ella está atareada en su puesto, revisando sus mercancías y hablando con algunos clientes. Puedes ir a: taberna, herreria, bosque\n\n¿Qué te gustaría hacer?'
+[mover] Me voy a la forja. (25s) []
+   pasos=[('move_to', {'destination': 'herreria'}), ('check_state', {})]
+   plaza→herreria hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a herreria. Llegas a la forja y te encuentras con Bron el herrero, quien te mira con curiosidad. El calor del horno es sofocante, y espadas y escudos cuelgan de las paredes. Bron es un herrero fornido y orgulloso de su oficio. NPCs aquí: Bron el herrero. Objetos aquí: escudo de hierro. ¿Qué te gustaría hacer?'
+[mover] Voy a la plaza. (28s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   herreria→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas de nuevo a la plaza central del pueblo. La fuente de piedra centra la atención de los pocos transeúntes que se encuentran allí. Elena la comerciante te mira con una sonrisa y te invita a pasar si necesitas algo. ¿Qué te gustaría hacer?'
+[mover] Vuelvo atrás. (24s) []
+   pasos=[('move_to', {'destination': 'herreria'})]
+   plaza→herreria hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas nuevamente a la herrería. El calor del horno es sofocante y el olor a metal derretido te invade. Espadas y escudos cuelgan de las paredes, y Bron el herrero te mira con curiosidad. ¿Qué te gustaría hacer? Puedes hablar con Bron, inspeccionar el escudo de hierro, o salir de nuevo a la plaza.'
+[mover] Voy a la plaza. (22s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   herreria→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas nuevamente a la plaza central del pueblo. Una fuente de piedra centra la atención de los pocos transeúntes que se encuentran allí. Elena la comerciante te mira con una sonrisa y te invita a pasar si necesitas algo. ¿Qué te gustaría hacer?'
+[mover] Corro hacia el bosque y luego a la cueva. (52s) []
+   pasos=[('move_to', {'destination': 'bosque'})]
+   plaza→bosque hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas al bosque, donde los árboles altos bloquean la luz del sol y se escuchan ruidos entre la maleza. No hay nadie más en el bosque. Observas hierbas medicinales creciendo entre los arbustos. ¿Qué deseas hacer?'
+[pregunta_estado] ¿Dónde estoy? (6s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. El bosque se encuentra en un silencio casi sepulcral, salpicado por el crujir ocasional de ramas y el zumbido de insectos.'
+[mover] Regreso a la taberna directamente. (20s) []
+   pasos=[('move_to', {'destination': 'taberna'}), ('check_state', {})]
+   bosque→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la taberna, donde el olor a estofado y la chimenea crepitante te reciben. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira con una ceja levantada. Hay una antorcha encendida en un rincón de la taberna. ¿Qué deseas hacer? ¿Te gustaría hablar con Goruk, buscar algo en la taberna, o simplemente observar el lugar?'
+[pregunta_memoria] ¿Cómo llego a la cueva? (3s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'La ruta más corta de taberna a cueva es: taberna → bosque → cueva.'
+[mover] Voy a la cueva. (14s) []
+   pasos=[('move_to', {'destination': 'cueva'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No puedes ir directamente a la cueva desde la taberna. Sigues en la taberna. ¿Quieres intentar ir al bosque y luego a la cueva? Si decides hacerlo, puedes seguir la ruta: taberna → bosque → cueva.'

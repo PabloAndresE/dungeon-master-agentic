@@ -1,0 +1,52 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-16T17:50:00Z"
+  },
+  "lists": "css",
+  "title": "Dungeon Master agéntico — Presentación final NLP",
+  "order": [
+    "cover",
+    "problema",
+    "datos",
+    "solucion",
+    "arq-baseline",
+    "arq-agente",
+    "arq-multi",
+    "arq-memoria",
+    "evaluacion",
+    "resultados",
+    "portipo",
+    "v3",
+    "conclusiones"
+  ],
+  "sections": {
+    "s1": {
+      "description": "Problema y datos: un LLM narra bien pero no lleva la cuenta; el mundo, el SRD y las partidas de prueba.",
+      "start": "cover"
+    },
+    "s2": {
+      "description": "Solución: línea base, agente y la propuesta con Agentic RAG, multi-agente y memoria en grafo, con su arquitectura.",
+      "start": "solucion"
+    },
+    "s3": {
+      "description": "Evaluación: la misma medida y el costo para los tres, resultados y la v3.",
+      "start": "evaluacion"
+    },
+    "s4": {
+      "description": "Conclusiones: qué funcionó, qué no funcionó y límites.",
+      "start": "conclusiones"
+    }
+  },
+  "faces": {
+    "eb-garamond": {
+      "family": "EB Garamond",
+      "href": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..700&display=swap"
+    },
+    "ibm-plex-sans": {
+      "family": "IBM Plex Sans",
+      "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    }
+  }
+}

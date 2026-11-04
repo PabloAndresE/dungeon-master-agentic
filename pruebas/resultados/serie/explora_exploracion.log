@@ -1,0 +1,53 @@
+[explorar] Examino la chimenea de la taberna. (18s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Exames la chimenea de la taberna y notas que los ladrillos en el interior parecen tener una configuración un poco diferente. Al tocarlos, descubres que pueden moverse, revelando un pequeño canalón secreto que conduce a una especie de almacén subterráneo. Descubres un lugar nuevo: canalización_secreta_chimenea (Al examinar la chimenea, notas que los'
+[explorar] ¿Encontré algo? (17s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'En la chimenea de la taberna has encontrado una llave antigua. La llave está empañada y tiene una empuñadura tallada con un rostro que parece una mezcla entre un humano y un gato. Parece que podría abrir alguna puerta en el edificio, pero no estás seguro de qué lugar podría ser. Tienes: llave antigua\n\n¿Qué harás?'
+[recoger] Lo recojo. (9s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Has recogido la llave antigua. La llave parece ser de alguna puerta importante en la taberna o en algún lugar cercano. ¿Qué harás ahora?'
+[pregunta_estado] ¿Qué llevo? (2s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Llevas: espada oxidada, pocion de curacion, llave antigua. En la taberna, la luz cálida y parpadeante de las velas ilumina las caras sonrientes de los clientes, mientras el aroma a estofado aromático y maderas viejas se mezcla con el susurro del fuego crepitando en la chimenea.'
+[explorar] Examino la chimenea otra vez. (17s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Examinas detenidamente la chimenea y notas que los ladrillos en el interior parecen tener una configuración un poco diferente. Al tocarlos, descubres que pueden moverse, revelando un pequeño canalón secreto que conduce a una especie de almacén subterráneo.'
+[mover] Busco una puerta trasera. (26s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Buscas una puerta trasera en la taberna, pero no encuentras ninguna obvia. Goruk el tabernero, que está atareado sirviendo a los clientes, no te presta mucha atención. Decides que el mejor camino es usar la llave antigua que has recogido para explorar más a fondo. Descubres un oscuro y húmedo pasadizo subterráneo que se extiende detrás de la tabern'
+[mover] Entro por ahí. (34s) []
+   pasos=[]
+   taberna→alcantarillado_subterráneo hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Llegas a alcantarillado subterráneo. Llegas al oscuro y húmedo pasadizo subterráneo que se extiende detrás de la taberna, conduciendo a una área desconocida. El olor a desechos y la humedad son inconfundibles en este lugar.'
+[pregunta_estado] ¿Dónde estoy? (2s) []
+   pasos=[]
+   alcantarillado_subterráneo→alcantarillado_subterráneo hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Estás en alcantarillado subterráneo. Desde aquí puedes ir a: taberna. En el oscuro y húmedo pasadizo subterráneo, el eco de gotas caídas resuena mientras se cierne una densa penumbra.'
+[mover] Vuelvo a la taberna. (15s) []
+   pasos=[]
+   alcantarillado_subterráneo→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Llegas de nuevo a la taberna, donde el fuego crepita en la chimenea y el olor a estofado cálidamente perfuma el aire. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira brevemente antes de volver a su tarea de servir a los clientes.'
+[pregunta_memoria] ¿Qué sitios nuevos hay? (18s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'En la taberna, has descubierto dos nuevos lugares: la canalización secreta en la chimenea y el alcantarillado subterráneo. Estos lugares ofrecen caminos alternativos y posiblemente información valiosa. 1. Canalización secreta en la chimenea: Se encuentra conectada a la taberna y te permite explorar áreas ocultas y posiblemente recuperar hierbas o o'
+[hablar] Busco al tabernero. (3s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Aquí mismo, ¿en qué te sirvo, viajero?"'
+[recoger] Recojo la antorcha. (15s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua', 'antorcha']
+   → 'Recolijes la antorcha del suelo de la taberna. La luz cálida y tenue ilumina tu camino, preparándote para lo que venga.'
+[recoger] Recojo la antorcha. (3s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'llave antigua', 'antorcha']
+   → "No hay 'antorcha' aqui. Objetos disponibles: ninguno"
+EXIT 0

@@ -1,0 +1,463 @@
+[
+ {
+  "a": "Examino la chimenea de la taberna.",
+  "intencion": "explorar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Examinas la chimenea de la taberna y notas que los ladrillos parecen estar un poco desgastados en un lado. Al tocarlos, descubres un pequeño pasadizo secreto que conduce hacia las cocinas de la taberna. Descubres un lugar nuevo: canal_secreto_chimenea (Al revisar la chimenea, notas que los ladrillos parecen estar un poco desgastados en un lado. Al tocarlos, descubres un pequeño pasadizo secreto que conduce hacia las cocinas de la taberna.). Se llega desde: taberna.",
+  "flags": [],
+  "t": 34.5,
+  "err": null
+ },
+ {
+  "a": "¿Encontré algo?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Sí: encontraste un lugar nuevo: canal secreto chimenea.",
+  "flags": [],
+  "t": 2.0,
+  "err": null
+ },
+ {
+  "a": "Lo recojo.",
+  "intencion": "recoger",
+  "pasos": [
+   [
+    "pick_up_item",
+    {
+     "item_name": "antorcha"
+    },
+    "Recogiste: antorcha. [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Recoges la antorcha y la guardas en tu mochila. Goruk el tabernero te mira de reojo, sin decir nada, pero parece un poco intrigado por tu curiosidad.",
+  "flags": [],
+  "t": 34.1,
+  "err": null
+ },
+ {
+  "a": "¿Qué llevo?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]\nDescripcion del luga"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Llevas: espada oxidada, pocion de curacion, antorcha. La taberna resplandece con la tenue luz de la mañana, filtrándose a través de las cortinas de terciopelo rojo y dándole un tono cálido a la estancia.",
+  "flags": [],
+  "t": 5.6,
+  "err": null
+ },
+ {
+  "a": "Examino la chimenea otra vez.",
+  "intencion": "explorar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]\nDescripcion del luga"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Los ladrillos en un lateral parecen estar un poco desgastados y casi se desprenden. Al tocarlos, descubres un pequeño pasadizo secreto que conduce hacia las cocinas de la taberna. Goruk el tabernero te mira de reojo, como si esperara que hagas algo.",
+  "flags": [],
+  "t": 28.1,
+  "err": null
+ },
+ {
+  "a": "Busco una puerta trasera.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]\nDescripcion del lu"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "No conoces ese lugar. Desde taberna puedes ir a: plaza, bosque, canal secreto chimenea.",
+  "flags": [],
+  "t": 3.4,
+  "err": null
+ },
+ {
+  "a": "Entro por ahí.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "canal_secreto_chimenea"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: canal_secreto_chimenea. Te mueves a: canal_secreto_chimenea. Al revisar la chimenea, notas que los ladrillos parecen es"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "canal_secreto_chimenea",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Llegas a canal secreto chimenea. Llegas al canal secreto detrás de la chimenea. La tenue luz de la antorcha ilumina los ladrillos desgastados que parecen haber sido tocados recientemente. Al tocarlos, descubres un pequeño pasadizo secreto que conduce hacia las cocinas de la taberna.",
+  "flags": [],
+  "t": 58.1,
+  "err": null
+ },
+ {
+  "a": "¿Dónde estoy?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: canal_secreto_chimenea | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]\nDes"
+   ]
+  ],
+  "antes": {
+   "location": "canal_secreto_chimenea",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "canal_secreto_chimenea",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Estás en canal secreto chimenea. Desde aquí puedes ir a: taberna. En el canal secreto chimenea, la luz del mediodía filtra a través de las nubes, proyectando sombras danzantes sobre los ladrillos desgastados del pasadizo secreto.",
+  "flags": [],
+  "t": 6.9,
+  "err": null
+ },
+ {
+  "a": "Vuelvo a la taberna.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "taberna"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: taberna. Te mueves a: taberna. Una taberna calida con olor a estofado. Un fuego crepita en la chimenea.\nNPCs aqui: ['Go"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]\nDescripcion del lu"
+   ]
+  ],
+  "antes": {
+   "location": "canal_secreto_chimenea",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Estás nuevamente en la taberna, una atmósfera cálida te envuelve mientras el olor a estofado se mezcla con el aroma de la cerveza. Un fuego crepita en la chimenea, proyectando sombras danzantes en las paredes. Goruk el tabernero, un enano gruñón pero de buen corazón, te saluda brevemente.",
+  "flags": [],
+  "t": 32.7,
+  "err": null
+ },
+ {
+  "a": "¿Qué sitios nuevos hay?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "lugares"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 1\n  [1] canal_secreto_chimenea | se llega desde: taberna | jugada 1 | Al revisar la chimenea, notas que los ladrillos parec"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Descubriste 1 lugar nuevo: canal secreto chimenea (se llega desde taberna).",
+  "flags": [],
+  "t": 4.6,
+  "err": null
+ },
+ {
+  "a": "Busco al tabernero.",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Hablas con Goruk el tabernero.\nGoruk el tabernero: \"No busques al tabernero, que aquí no hay ninguno.\"",
+  "flags": [],
+  "t": 5.5,
+  "err": null
+ },
+ {
+  "a": "Recojo la antorcha.",
+  "intencion": "recoger",
+  "pasos": [
+   [
+    "pick_up_item",
+    {
+     "item_name": "antorcha"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Ya llevas antorcha."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Ya llevas antorcha.",
+  "flags": [],
+  "t": 7.3,
+  "err": null
+ },
+ {
+  "a": "Recojo la antorcha.",
+  "intencion": "recoger",
+  "pasos": [
+   [
+    "pick_up_item",
+    {
+     "item_name": "Recojo la antorcha."
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Ya llevas antorcha."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "antorcha"
+   ]
+  },
+  "resp": "Ya llevas antorcha.",
+  "flags": [],
+  "t": 4.9,
+  "err": null
+ }
+]

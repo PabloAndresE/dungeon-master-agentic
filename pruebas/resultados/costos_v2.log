@@ -1,0 +1,23 @@
+Secuencia de evaluación: holdout2 (26 turnos)
+Desglose:
+  location             5 turnos
+  srd                  4 turnos
+  inventory            2 turnos
+  relation_memory      2 turnos
+  item_mention         1 turnos
+  illegal_move         1 turnos
+  hp_mentioned         1 turnos
+  gold_change          1 turnos
+  expansion            1 turnos
+  new_location         1 turnos
+  connection_check     1 turnos
+  npc_creation         1 turnos
+  potion_used          1 turnos
+  route                1 turnos
+  inventory_full       1 turnos
+  expansion_memory     1 turnos
+  event_memory         1 turnos
+{'sistema': 'Baseline', 'jugadas': 52, 'seg_por_jugada': 1.09, 'llamadas_7b_por_jugada': 1.0, 'llamadas_72b_por_jugada': 0.0, 'tokens_entrada_por_jugada': 5783, 'tokens_salida_por_jugada': 210, 'embeddings_por_jugada': 0.0}
+{'sistema': 'Agente v1', 'jugadas': 52, 'seg_por_jugada': 0.74, 'llamadas_7b_por_jugada': 1.29, 'llamadas_72b_por_jugada': 0.0, 'tokens_entrada_por_jugada': 5984, 'tokens_salida_por_jugada': 118, 'embeddings_por_jugada': 0.0}
+{'sistema': 'Multi', 'jugadas': 52, 'seg_por_jugada': 4.94, 'llamadas_7b_por_jugada': 4.38, 'llamadas_72b_por_jugada': 0.0, 'tokens_entrada_por_jugada': 6336, 'tokens_salida_por_jugada': 361, 'embeddings_por_jugada': 6.9}
+guardado runs_holdout2/costos_holdout2.csv

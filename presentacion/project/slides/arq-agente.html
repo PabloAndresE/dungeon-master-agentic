@@ -1,0 +1,35 @@
+<section id="arq-agente" data-transition="fade" style="background:#f5f1e8;color:#1c1f26;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;color:#c4521f;letter-spacing:4px;text-transform:uppercase;font-weight:600">Arquitectura 2 · Agéntico</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1">ReAct nativo de LangGraph con estado externo</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:64px;align-items:center">
+<div style="width:800px;display:flex;flex-direction:column;align-items:center;gap:20px">
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px">
+<div style="width:330px;background:#eb6834;border-radius:14px;padding:22px 24px"><p style="font-size:28px;text-align:center;color:#1c1f26"><b>agent</b><br>LLM + tool calling<br>temp. 0.7</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;align-items:center">
+<x-shape kind="arrow-right" style="background:#c4521f;width:72px;height:32px"></x-shape>
+<x-shape kind="arrow-left" style="background:#c4521f;width:72px;height:32px"></x-shape>
+</div>
+<div style="width:330px;background:#fbf9f4;border:2px solid #c9bfa8;border-radius:14px;padding:22px 24px"><p style="font-size:28px;text-align:center"><b>tools</b><br>ToolNode<br>ejecuta y observa</p></div>
+</div>
+<x-shape kind="arrow-down" style="background:#c4521f;width:28px;height:44px"></x-shape>
+<div style="width:800px;background:#fbf9f4;border:2px dashed #c4521f;border-radius:14px;padding:20px 28px"><p style="font-size:28px;text-align:center"><b>game_state en Python</b>: ubicación, vida, oro, inventario, mapa, enemigos</p></div>
+<div style="display:flex;flex-direction:row;flex-wrap:wrap;gap:12px;justify-content:center;width:800px">
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">check_state</p>
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">move_to</p>
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">pick_up_item</p>
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">use_potion</p>
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">attack_enemy</p>
+<p style="font-size:24px;background:#f3e3d6;padding:8px 16px;border-radius:999px">roll_dice</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px">
+<p style="font-size:28px;line-height:1.4;color:#3e4450"><b>Ciclo:</b> el LLM decide qué herramienta llamar; termina cuando responde sin pedir ninguna.</p>
+<p style="font-size:28px;line-height:1.4;color:#3e4450"><b>El estado lo devuelven las herramientas</b>, no la memoria del modelo. Prompt: «siempre llama a check_state primero».</p>
+<p style="font-size:28px;line-height:1.4;color:#3e4450"><b>No tiene:</b> RAG, memoria del mundo, compras ni diálogo con personajes.</p>
+<p style="font-size:28px;line-height:1.4;color:#3e4450"><b>Falla típica:</b> se queda en un bucle llamando a check_state (~5 de 21 corridas de desarrollo).</p>
+</div>
+</div>
+<aside>(≈20 s) El agente: el ReAct nativo de LangGraph. El LLM llama herramientas, el ToolNode las ejecuta, y el estado vive en Python. No tiene RAG ni memoria del mundo, y a veces se queda en un bucle.</aside>
+</section>

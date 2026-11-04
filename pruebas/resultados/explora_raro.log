@@ -1,0 +1,49 @@
+[pregunta_estado] ... (18s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en taberna. Aquí hay: antorcha. Personajes: Goruk el tabernero. Llevas: espada oxidada, pocion de curacion. En la taberna, la luz cálida y parpadeante de las velas ilumina las caras sonrientes de los clientes, mientras el aroma a estofado se mezcla con el humo del fuego que crepita tranquilamente en la chimenea.'
+[mover] I go to the plaza. (217s) ['LENTO(217s)']
+   pasos=[]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. Una fuente de piedra en el centro gotea suavemente, y Elena la comerciante, una mujer astuta y amable, te saluda con una sonrisa. Puedes ir a: taberna, herreria, bosque.'
+[otra] asdfgh qwerty (79s) ['LENTO(79s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te saluda de nuevo. Puedes preguntarle por su comercio o seguir tu camino hacia: herreria, bosque.'
+[pregunta_estado] ¿Qué hora es? (6s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Es mañana: la luz de la mañana entra clara. La plaza central del pueblo está bañada por la luz cálida del sol que se filtra entre las hojas verdes de los árboles cercanos, creando patrones de sombras danzantes.'
+[otra] Bailo en la mesa. (184s) ['LENTO(184s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te observa con una ceja levantada, esperando que te sientas en uno de los taburetes de la taberna cercana si realmente quieres bailar. Puedes preguntarle algo sobre su comercio o seguir explorando la plaza.'
+[otra] Me duermo un rato. (149s) ['LENTO(149s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'El agua de la fuente gotea suavemente, creando un sonido relajante en el aire cálido de la tarde. Puedes preguntarle algo sobre su comercio o seguir explorando la plaza.'
+[atacar] Le robo el oro a Goruk. (84s) ['LENTO(84s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Elena la comerciante te observa con una mirada inquisitiva, esperando que hagas algo más. ¿Qué deseas hacer ahora?'
+[otra] Grito muy fuerte. (120s) ['LENTO(120s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Gritas con todo tu aliento, atrayendo la atención de Elena la comerciante, que te mira sorprendida. Ella se acerca rápidamente, poniéndose en guardia.'
+[otra] Lanzo la espada al fuego. (78s) ['LENTO(78s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Lanzas tu espada oxidada al fuego que salta de la chimenea en la taberna. La espada se hunde en el brasero, y un olor a metal derretido y humo se levanta. Elena la comerciante te mira sorprendida y un poco molesta.'
+[pregunta_estado] ¿Qué llevo? (9s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llevas: espada oxidada, pocion de curacion. La plaza central resplandece con la luz del sol que cae suavemente, creando sombras danzantes en las paredes de piedra.'
+[pregunta_memoria] Le pregunto a Goruk si me vio bailar. (78s) ['LENTO(78s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Preguntas a Elena la comerciante sobre si te vio bailar, pero ella no recuerda nada al respecto y te mira con una ceja levantada, evidentemente intrigada por tu pregunta.'
+[otra] Quiero salir de la aventura. (87s) ['LENTO(87s)']
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Preguntas a Elena la comerciante sobre si te vio bailar, pero ella no recuerda nada al respecto y te mira con una ceja levantada, evidentemente intrigada por tu pregunta.'
+EXIT 0

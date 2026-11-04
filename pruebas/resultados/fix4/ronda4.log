@@ -1,0 +1,30 @@
+[mover] Voy al castillo. | oro 15
+    → 'No conoces ese lugar. Desde taberna puedes ir a: plaza, bosque.'
+[mover] Quiero salir de la aventura. | oro 15
+    → 'No conoces ese lugar. Desde taberna puedes ir a: plaza, bosque.'
+[mover] Voy a la plaza. | oro 15
+    → 'Llegas a la plaza central del pueblo. Una fuente de piedra se encuentra en el centro. Observas a Elena la comerciante, una figura conocida por sus astutas pero amables negocios. Puedes ir a la taberna, la herrería o el bosque. ¿Qu'
+[atacar] Le robo el oro a Goruk. | oro 15
+    → 'Goruk el tabernero no está aquí (lo encuentras en taberna).'
+[hablar] ¿Cuánto cuesta una poción? | oro 15
+    → 'Hablas con Elena la comerciante.\nElena la comerciante: "Una poción de curación cuesta 10 monedas de oro. No bajo de ese precio, pero la hierba del bosque es de lo mejor para prepararlas."'
+[comprar] Le compro una poción a Elena. | oro 5
+    → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+[mover] Voy a la herrería. | oro 5
+    → 'Llegas a la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes. Bron el herrero, un hombre fornido y orgulloso de su oficio, te mira con curiosidad.'
+[comprar] Le pago a Bron para que afile mi espada. | oro 0
+    → 'Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.'
+[comprar] Le pago otra vez para que la afile. | oro 0
+    → 'No se pudo comprar: afilar espada cuesta 5 de oro y solo tienes 0.'
+[atacar] Ataco al goblin. | oro 0
+    → 'Goblin centinela no está aquí (lo encuentras en cueva).'
+[pregunta_reglas] Según las reglas, ¿cuánto daño hace una caída? | oro 0
+    → 'Según las reglas, un personaje que cae recibe 1d6 daño contundente por cada 10 pies que cae, hasta un máximo de 20d6. El personaje cae tendido de espaldas, a menos que evite recibir daño de la caída.'
+[pregunta_reglas·seg] ¿Hay un máximo? | oro 0
+    → 'Se establece un máximo de 20d6.'
+[pregunta_reglas] Según las reglas, ¿qué tan peligroso es un dragón rojo adulto? | oro 0
+    → 'Según las reglas, un dragón rojo adulto tiene una clase de armadura de 19, 19d12 puntos de golpe y un valor de desafío de 17 (18000 XP).'
+[pregunta_reglas·seg] ¿Y su aliento? | oro 0
+    → 'El drago exhala fuego en un cono de 60 pies. Cada criatura en ese área debe hacer una tirada de salvación deDestreza DC 21, tomando 63 (18d6) puntos de daño de fuego en un fallo, o la mitad de ese daño en un éxito.'
+[pregunta_reglas] ¿Qué pasa si estoy envenenado? | oro 0
+    → 'Al inicio de cada uno de tus turnos mientras estés envenenado de esta manera, tomas 3d6 daño venenoso. Al final de cada uno de tus turnos, puedes repetir la tirada de salvación. Con una tirada exitosa, el daño venenoso que tomes e'

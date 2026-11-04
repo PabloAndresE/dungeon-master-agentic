@@ -1,0 +1,385 @@
+[
+ {
+  "a": "Voy a la plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la plaza central del pueblo. Una fuente de piedra se encuentra en el centro. Observas a Elena la comerciante, una figura conocida en el lugar. Puedes ir a la taberna, la herrería o hacia el bosque.",
+  "flags": [],
+  "t": 9.6,
+  "err": null
+ },
+ {
+  "a": "Hola Elena, ¿qué vendes?",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Elena la comerciante.\nElena la comerciante: \"¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo.\"",
+  "flags": [],
+  "t": 2.1,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto cuesta una poción?",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "¿Cuánto cuesta una poción?",
+  "flags": [],
+  "t": 9.1,
+  "err": null
+ },
+ {
+  "a": "¿Me la dejas en 5 monedas?",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.",
+  "flags": [],
+  "t": 2.6,
+  "err": null
+ },
+ {
+  "a": "Le compro una poción a Elena.",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.",
+  "flags": [],
+  "t": 2.3,
+  "err": null
+ },
+ {
+  "a": "Le compro otra poción.",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.",
+  "flags": [],
+  "t": 1.8,
+  "err": null
+ },
+ {
+  "a": "¿Cuánto oro me queda?",
+  "intencion": "pregunta_estado",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Tienes 5 monedas de oro. La plaza central resplandece con la luz del sol que se filtra entre las hojas verdes de los árboles cercanos, creando patrones danzantes sobre el suelo de piedra.",
+  "flags": [],
+  "t": 1.6,
+  "err": null
+ },
+ {
+  "a": "Voy a la herrería.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes, y el olor a hierro derretido es inconfundible. Bron el herrero, un hombre fornido y orgulloso de su oficio, te mira con interés.",
+  "flags": [],
+  "t": 13.7,
+  "err": null
+ },
+ {
+  "a": "Bron, ¿sabes algo de los goblins?",
+  "intencion": "hablar",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Bron el herrero.\nBron el herrero: \"En este rincón de la tierra no han pasado goblins por aquí, así que no sé nada de esos bestias.\"",
+  "flags": [],
+  "t": 2.6,
+  "err": null
+ },
+ {
+  "a": "Le pago a Bron para que afile mi espada.",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 5,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.",
+  "flags": [],
+  "t": 2.4,
+  "err": null
+ },
+ {
+  "a": "Le pago otra vez para que la afile.",
+  "intencion": "comprar",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No se pudo comprar: afilar espada cuesta 5 de oro y solo tienes 0.",
+  "flags": [],
+  "t": 2.3,
+  "err": null
+ },
+ {
+  "a": "¿Qué me dijo Elena?",
+  "intencion": "pregunta_dialogo",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Elena la comerciante te dijo: \"¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo.\"",
+  "flags": [],
+  "t": 1.6,
+  "err": null
+ },
+ {
+  "a": "¿Qué compré hoy?",
+  "intencion": "pregunta_memoria",
+  "pasos": [],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 0,
+   "inventory": [
+    "espada afilada",
+    "pocion de curacion",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Le pagas 5 monedas de oro a Bron el herrero para que afilie tu espada. Después, visitas Elena la comerciante en la plaza y le pagas 10 monedas de oro por una poción de curación.",
+  "flags": [],
+  "t": 15.9,
+  "err": null
+ }
+]

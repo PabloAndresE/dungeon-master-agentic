@@ -1,0 +1,77 @@
+[otra] Miro a mi alrededor. (19s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Observas la taberna, notando cómo el fuego crepita en la chimenea y el aroma de estofado calienta el aire. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira brevemente antes de volver a su tarea. Un objeto que podría ser útil, una antorcha, descansa en un estante cercano. Puedes dirigirte hacia la plaza o hacia el bosque.'
+[mover] Voy a la plaza. (20s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. La fuente de piedra en el centro refleja la luz del sol que se filtra entre las nubes. Elena la comerciante, una mujer de aspecto astuto pero amable, te saluda con una sonrisa. Parece interesada en algún negocio, pero espera que seas tú quien inicie la conversación.'
+[hablar] ¿Cuánto cuesta una poción? (4s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "Cada poción de curación cuesta 10 monedas de oro. No suele haber negocios en este precio, pero si buscas algo más económico, podrías echar un vistazo a la aldea vecina."'
+[hablar] ¿Me la dejas en 5 monedas? (4s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "Lo siento, pero no bajo de 10 monedas de oro por cada poción de curación. Son pociones de alta calidad, después de todo."'
+[pregunta_estado] ¿Cuánto oro tengo? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tienes 15 monedas de oro. La plaza central del pueblo se ilumina con la suave luz matutina, filtrándose entre las hojas verdes de los árboles cercanos.'
+[curarse] Me tomo la poción. (4s) []
+   pasos=[('use_potion', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Ya tienes la vida al maximo (20/20): guardas la pocion.'
+[soltar] Lanzo la espada al suelo. (9s) []
+   pasos=[('drop_item', {'item_name': 'espada oxidada'})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Lanzas la espada oxidada al suelo con fuerza. La espada chirría al golpear el pavimento y se queda allí, inmóvil.'
+[pregunta_estado] ¿Qué llevo? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion']
+   → 'Llevas: pocion de curacion. La plaza central resplandece bajo un cielo azul claro, con el sol de mediodía derramando una luz cálida y brillante que destaca las sombras suaves bajo las arcadas de piedra y en el agua estancada de la fuente, donde se reflejan los colores del arcoíris.'
+[recoger] Recojo la espada. (15s) []
+   pasos=[('pick_up_item', {'item_name': 'espada oxidada'})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Recoljas la espada oxidada y la colocas nuevamente en tu inventario.'
+[pregunta_estado] ¿Qué hora es? (4s) []
+   pasos=[('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Es mediodía: el sol está en lo alto. La plaza central resplandece bajo el claror del mediodía, donde la luz dorada cae suavemente sobre la piedra lisa de la fuente, creando sombras danzantes mientras los pétalos de una flor cercana se mecen suavemente con el suave susurro del viento.'
+[mover] Voy a la taberna. (31s) []
+   pasos=[('move_to', {'destination': 'taberna'}), ('check_state', {})]
+   plaza→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Llegas a la taberna, donde el aire está cargado con el aroma del estofado y el crujir del fuego en la chimenea. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira desde su asiento.'
+[explorar] Examino la chimenea con cuidado. (36s) ['DICE_LLEGAS_SIN_MOVER(una pequeña sala de )']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Examinas la chimenea con cuidado y descubres un pasadizo encubierto detrás de ella. El pasadizo está bien oculto, solo visible si se examina la chimenea con atención. Sigues el pasadizo y llegas a una pequeña sala de almacenamiento.'
+[pregunta_memoria] ¿Encontré algo? (17s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'En la chimenea, encuentras una antorcha que estaba bien oculta. La antorcha podría ser útil si necesitas iluminación en el pasadizo.'
+[recoger] Lo recojo. (63s) ['LENTO(63s)']
+   pasos=[('pick_up_item', {'item_name': 'antorcha'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada', 'antorcha']
+   → 'Recolijes la antorcha y la guardas en tu mochila. La luz de la antorcha ilumina el pasadizo encubierto, revelando barriles vacíos y algunas telas viejas apiladas en los rincones.'
+[soltar] Tiro la antorcha al fuego. (51s) []
+   pasos=[('drop_item', {'item_name': 'Tiro la antorcha al fuego.'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Las viejas maderas crujen mientras el fuego devora la antorcha, dejando el pasadizo en penumbra nuevamente.'
+[pregunta_estado] ¿Qué llevo? (6s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Llevas: pocion de curacion, espada oxidada. La taberna se ilumina con tenues rayos de sol que se filtran a través de las cortinas de terciopelo, mezclándose con la tenue luz de las velas.'
+[comprar] Quiero comprar una poción. (23s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'}), ('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'No hay nadie en la taberna que venda pociones. Goruk el tabernero te mira con una ceja levantada, sin ofrecerte su ayuda en esta ocasión.'
+[mover] Voy a la plaza. (22s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['pocion de curacion', 'espada oxidada']
+   → 'Llegas a plaza. Elena la comerciante te mira con una sonrisa y te invita a inspeccionar su estante.'
+[comprar] Le compro una poción a Elena. (7s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'}), ('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→5 inv ['pocion de curacion', 'espada oxidada', 'pocion de curacion']
+   → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+EXIT 0

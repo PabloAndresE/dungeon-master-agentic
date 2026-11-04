@@ -1,0 +1,79 @@
+Secuencia de evaluación: holdout3 (26 turnos)
+t1 [otra] Echo una mirada por la taberna.
+  → 'Observas la taberna, que es un lugar cálido con un olor agradable de estofado. Un fuego crepita en la chimenea, proyectando sombras danzantes sobre las tablas de madera. Goruk el tabernero, un enano gruñón pero de buen corazón, te observa desde detrás del most'
+  ? ¿Qué cosas hay que pueda tomar? → 'Observas la taberna y notas una antorcha apoyada en el mostrador. Goruk el tabernero, un enano gruñón pero de buen corazón, te observa desde detrás del mostrador. Puedes preguntarle si puede prestarte'
+t2 [hablar] Le pregunto a Goruk qué se cuenta por el pueblo.
+  → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Dicen que una bruja vive en el pantano, más allá del bosque, y que cura cualquier mal a cambio de un favor. Nunca la he visto, pero Bron el herrero ha hablado de ella."\n\n[HP: 20/20 | Oro: 15 | Ubicacion: tabe'
+  ? ¿Qué me dijo Goruk? → 'Goruk el tabernero te dijo: "Dicen que una bruja vive en el pantano, más allá del bosque, y que cura cualquier mal a cambio de un favor. Nunca la he visto, pero Bron el herrero ha hablado de ella."\n\n['
+t3 [mover] Me dirijo a la plaza.
+  → 'Llegas a la plaza central del pueblo, donde una fuente de piedra centra la atención de los pocos lugareños que se encuentran allí. Elena la comerciante, una mujer astuta pero amable, está sentada en un taburete detrás de un pequeño mostrador, atendiendo a un g'
+  ? ¿En dónde estoy parado? → 'Estás en plaza. Desde aquí puedes ir a: taberna, herreria, bosque. La plaza central resplandece bajo el luminoso cielo azul del mediodía, donde la luz cálida y difusa baña la escultura de la fuente de'
+t4 [curarse] Bebo mi poción de curación.
+  → 'Ya tienes la vida al maximo (20/20): guardas la pocion.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]'
+  ? ¿Me queda alguna poción? → 'Sí, llevas pocion de curacion. La plaza central resplandece bajo el fulgor del mediodía, donde la luz dorada cae suavemente sobre la piedra de la fuente, creando sombras danzantes mientras los pétalos'
+t5 [comprar] Le compro una poción a Elena.
+  → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.\n\n[HP: 20/20 | Oro: 5 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, pocion de curacion]'
+  ? ¿Cuánto oro me queda? → 'Tienes 5 monedas de oro. La plaza central resplandece bajo un cielo azul claro de mediodía, con rayos de sol que danzan en el agua de la fuente de piedra, creando patrones caleidoscópicos en el pavime'
+t6 [pregunta_estado] Reviso lo que llevo.
+  → 'Llevas: espada oxidada, pocion de curacion, pocion de curacion. La plaza central resplandece bajo un cielo azul claro de mediodía, con rayos de sol que danzan en el agua de la fuente de piedra, creando patrones caleidoscópicos sobre el adoquinado.\n\n[HP: 20/20 '
+  ? ¿Llevo alguna poción ahora? → 'Sí, llevas pocion de curacion. La plaza central del pueblo está bañada por la tenue luz del atardecer, filtrándose a través de las hojas de los árboles que rodean la fuente de piedra, creando sombras '
+t7 [mover] Voy a la herrería.
+  → 'Llegas a la herrería y te encuentras con el calor sofocante del horno. Espadas y escudos cuelgan de las paredes, y el olor a metal derretido y hierro recién forjado impregna el aire. Bron el herrero, un hombre fornido y orgulloso de su oficio, te mira con curi'
+  ? ¿Dónde estoy ahora? → 'Estás en herreria. Desde aquí puedes ir a: plaza.\n\n[HP: 20/20 | Oro: 5 | Ubicacion: herreria | Momento: tarde | Inventario: espada oxidada, pocion de curacion, pocion de curacion]'
+t8 [comprar] Le pago a Bron para que afile mi espada.
+  → 'Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: tarde | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Cómo está mi espada ahora? → 'Sí, llevas espada afilada. La tarde cuelga una sombra tenue mientras el resplandor rojizo del horno cobra vida en el aire, calentando la herrería con su brillo tenue.\n\n[HP: 20/20 | Oro: 0 | Ubicacion:'
+t9 [mover] Intento cruzar directo al bosque desde aquí.
+  → 'No puedes cruzar directamente al bosque desde la herrería. La ruta más corta implica pasar por la plaza.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: tarde | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Llegué al bosque? → 'No llegaste directamente al bosque desde la herrería. Según la ruta más corta, debes pasar por la plaza primero.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: herreria | Momento: atardecer | Inventario: espada af'
+t10 [mover] Vuelvo a la plaza.
+  → 'La ruta más corta implica cruzar la plaza y entrar por el bosque que se extiende al sur.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: plaza | Momento: atardecer | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Dónde estoy? → 'Estás en plaza. Desde aquí puedes ir a: taberna, herreria, bosque. La plaza central del pueblo se ilumina con tonos cálidos de anaranjado y rosa, proyectados por el atardecer.\n\n[HP: 20/20 | Oro: 0 | U'
+t11 [mover] Me adentro en el bosque.
+  → 'Has entrado en el bosque. Los árboles altos bloquean la luz del atardecer, y se escuchan ruidos entre la maleza. Has recogido una hierba medicinal.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: atardecer | Inventario: espada afilada, pocion de curacion, '
+  ? ¿Dónde me encuentro? → 'Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. El bosque se ilumina con tenues rayos de sol que se filtran entre los altos árboles, proyectando sombras danzantes sobre el suelo.\n\n[HP:'
+t12 [pregunta_reglas] Según las reglas, ¿qué tan resistente es un oso pardo?
+  → 'Según las reglas, un oso pardo tiene una clase de armadura de 11, 34 puntos de golpe (4d10), y un valor de desafío de 1 (200 XP).\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: atardecer | Inventario: espada afilada, pocion de curacion, pocion de curacion'
+  ? ¿Cuánto daño hacen sus garras? → 'Sus garras causan 11 (2d6 + 4) daño cortante.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t13 [mover] Sigo hasta la cueva.
+  → 'Llegas a la cueva, que es oscura y humeda. Huesos viejos están esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te está vigilando. En el suelo, puedes ver un cofre con 50 monedas de oro. El goblin centinela no te habla y parece dispuesto a'
+  ? ¿Dónde estoy? → 'Estás en cueva. Desde aquí puedes ir a: bosque. La cueva se sumerge en una penumbra tenue, apenas iluminada por la tenue luna que se filtra a través de diminutos agujeros en el techo rocoso, creando s'
+t14 [atacar] Ataco al goblin.
+  → 'Atacas a Goblin centinela con tu espada afilada (tirada 22 contra CA 15): ¡aciertas! Le haces 7 de daño. ¡Goblin centinela cae derrotado!\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curac'
+  ? ¿Cómo va la pelea? → 'Estás en cueva. Aquí hay: cofre con 50 monedas de oro. Personajes: nadie. Llevas: espada afilada, pocion de curacion, pocion de curacion. En la cueva, la tenue luz de la luna se filtra a través de gri'
+t15 [atacar] Lo ataco de nuevo.
+  → 'No hay ningun enemigo asi aqui. Presentes: nadie\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Cuánta vida me queda? → 'Tienes 20/20 puntos de vida. La cueva se ilumina débilmente por la tenue luz de la luna filtrándose entre las grietas, creando sombras danzantes en el suelo mojado y cubierto de huesos antiguos.\n\n[HP:'
+t16 [atacar] Sigo atacando al goblin.
+  → 'No hay ningun enemigo asi aqui. Presentes: nadie\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Cuánta vida tengo? → 'Tienes 20/20 puntos de vida. En la cueva, la penumbra apenas se filtra a través de las grietas, creando sombras danzantes y una luz tenue que resalta el brillo verdeoso de las gotas de agua que resbal'
+t17 [explorar] Examino los rincones de la cueva por si hay otra salida.
+  → 'Examinas los rincones de la cueva con atención, pero no encuentras otra salida visible. De repente, notas un manto de enredaderas que se mueve ligeramente en una de las paredes. Al separarlas, descubres un pasadizo secreto que se abre justo a tu lado. La penum'
+  ? ¿Encontré algo? → 'Sí: encontraste un lugar nuevo: pasadizo secreto.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t18 [pregunta_reglas] Según las reglas, ¿cuánto daño hace una caída?
+  → 'Según las reglas, un personaje que cae recibe 1d6 daño contundente por cada 10 pies que cae, hasta un máximo de 20d6. El personaje cae tendido de espaldas, a menos que evite recibir daño de la caída.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | I'
+  ? ¿Hay un máximo? → 'Se establece un máximo de 20d6.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t19 [mover] Entro en lo que haya encontrado.
+  → 'Entras en el pasadizo secreto, que se abre en la roca justo a tu lado, oculto por un manto de enredaderas. La penumbra es tenue pero permite ver el camino hacia adelante. No hay nadie en el pasadizo y no encuentras objetos de valor.\n\n[HP: 20/20 | Oro: 0 | Ubic'
+  ? ¿Dónde estoy ahora? → 'Estás en pasadizo secreto. Desde aquí puedes ir a: cueva. El pasadizo secreto se abre en la roca, iluminado apenas por la tenue luz de la luna que se filtra a través de las enredaderas, creando sombra'
+t20 [mover] Regreso a la cueva.
+  → 'Regresas a la cueva, donde te encuentras en medio de un ambiente oscuro y húmedo. Huesos viejos y rotos están esparcidos por el suelo, y el olor a humedad y podredumbre es inconfundible. La luz de la luna que se filtra a través de las entradas de la cueva crea'
+  ? ¿Puedo volver a ese sitio? → 'Sí: desde cueva puedes ir directamente a pasadizo secreto.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: cueva | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t21 [mover] Vuelvo al bosque.
+  → 'Llegas de nuevo al bosque, donde los árboles altos bloquean la luz, creando un ambiente oscuro y silencioso. Se escuchan ruidos entre la maleza, posiblemente algún animal nocturno. En el suelo, ves hierbas medicinales que podrían ser útiles. Puedes ir a: plaza'
+  ? ¿Dónde estoy? → 'Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. La oscuridad se cierne sobre el bosque, apenas filtrada por los rayos de luna que se esconden entre los troncos altos, mientras el susur'
+t22 [pregunta_memoria] ¿Cómo llego a la herrería desde aquí?
+  → 'La ruta más corta de bosque a herreria es: bosque → plaza → herreria.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Qué lugares cruzo? → 'La ruta más corta de bosque a herreria es: bosque → plaza → herreria.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t23 [pregunta_memoria] ¿Quién me afiló la espada?
+  → 'Le pagaste 5 de oro a Bron el herrero por afilar tu espada.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Cuánto le pagué? → 'Le pagaste 5 de oro a Bron el herrero por afilar tu espada.\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t24 [pregunta_memoria] ¿Qué sitios nuevos conocí?
+  → 'Descubriste 1 lugar nuevo: pasadizo secreto (se llega desde cueva).\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+  ? ¿Cuántos son? → 'Descubriste 1 lugar nuevo: pasadizo secreto (se llega desde cueva).\n\n[HP: 20/20 | Oro: 0 | Ubicacion: bosque | Momento: noche | Inventario: espada afilada, pocion de curacion, pocion de curacion]'
+t25 [pregunta_memoria] Cuéntame la aventura completa.
+  → '### Resumen de la Aventura\n\n1. **Conversación con Goruk el Tabernero**: Hablaste con Goruk el tabernero en la taberna. Él te contó que una bruja vive en el pantano, más allá del bosque, y que cura cualquier mal a cambio de un favor. Goruk mencionó que nunca la'
+  ? ¿Qué fue lo más importante? → 'El jugador recuerda los eventos más importantes de su aventura hasta el momento:\n\n1. Habló con Goruk el tabernero, quien le contó sobre una bruja que vive en el pantano, más allá del bosque. 2. Compró'
+t26 [pregunta_estado] Reviso todo mi equipo.
+  → 'Llevas: espada afilada, pocion de curacion, pocion de curacion. El bosque se ensombrece bajo un cielo estrellado, con árboles gigantes que bloquean la tenue luz lunar, dejando caer sombras danzantes entre la maleza, donde se escuchan susurros y crujidos inquie'
+  ? ¿Qué llevo exactamente? → 'Llevas: espada afilada, pocion de curacion, pocion de curacion. El bosque se cubre con una densa penumbra, apenas iluminada por la tenue luz de una luna menguante que se filtra entre los ramajes, mien'

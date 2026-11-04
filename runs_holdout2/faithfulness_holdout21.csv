@@ -1,0 +1,16 @@
+sistema,turno,field,faithfulness
+Baseline,7,srd,
+Baseline,13,srd,
+Baseline,18,srd,
+Baseline,21,srd,0.125
+Baseline,26,event_memory,0.2857142857142857
+Agente v1,7,srd,0.2
+Agente v1,13,srd,0.16666666666666666
+Agente v1,18,srd,0.2222222222222222
+Agente v1,21,srd,0.0
+Agente v1,26,event_memory,0.07692307692307693
+Multi v2,7,srd,
+Multi v2,13,srd,1.0
+Multi v2,18,srd,0.7777777777777778
+Multi v2,21,srd,0.5
+Multi v2,26,event_memory,0.6923076923076923

@@ -1,0 +1,4 @@
+sistema,jugadas,seg_por_jugada,llamadas_7b_por_jugada,llamadas_72b_por_jugada,tokens_entrada_por_jugada,tokens_salida_por_jugada,embeddings_por_jugada
+Baseline,52,1.09,1.0,0.0,5783,210,0.0
+Agente v1,52,0.74,1.29,0.0,5984,118,0.0
+Multi,52,4.94,4.38,0.0,6336,361,6.9

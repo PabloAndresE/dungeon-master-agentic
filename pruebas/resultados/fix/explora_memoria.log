@@ -1,0 +1,49 @@
+[hablar] Hablo con Goruk sobre el bosque. (6s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Ya, ya. El bosque es un lugar oscuro y peligroso, sobre todo de noche. Si te decides a pasar, ten cuidado con los ruidos que salen de entre la maleza."'
+[mover] Voy a la plaza. (74s) ['LENTO(74s)']
+   pasos=[('move_to', {'destination': 'plaza'})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo, donde una fuente de piedra centra el espacio abierto. Elena la comerciante, sentada detrás de su puesto, atiende a unos pocos clientes. Observas que la mayoría de las personas aún están en sus hogares, excepto por Elena.'
+[comprar] Le compro una poción a Elena. (6s) []
+   pasos=[('buy_item', {'item_name': 'pocion de curacion'}), ('check_state', {})]
+   plaza→plaza hp 20→20 oro 15→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+[mover] Voy al bosque. (36s) []
+   pasos=[('move_to', {'destination': 'bosque'}), ('check_state', {})]
+   plaza→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Llegas al bosque. Los altos árboles bloquean la luz del sol, y se escuchan ruidos extraños entre la maleza. Caminas con precaución, atento a cualquier movimiento sospechoso.'
+[recoger] Recojo las hierbas medicinales. (25s) []
+   pasos=[('pick_up_item', {'item_name': 'hierbas medicinales'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Recolijes hierbas medicinales del suelo. Aunque el bosque es oscuro y peligroso, logras recoger una buena cantidad sin problemas.'
+[pregunta_memoria] ¿Qué compré y a quién? (16s) []
+   pasos=[('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Compraste una poción de curación a Elena la comerciante por 10 monedas de oro.'
+[pregunta_memoria] ¿A quién conocí hasta ahora? (29s) []
+   pasos=[('consult_world', {'topic': 'personajes_conocidos'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Hablaste con Goruk el tabernero, quien te advirtió sobre los peligros del bosque. Conoces ahora a Goruk el tabernero, quien te aconsejó que tengas cuidado con los ruidos que salen de entre la maleza, especialmente de noche. [Eventos: Conoces a Goruk el tabernero, visitas la plaza, compras una poción de curación en la taberna, recolectas hierbas med'
+[pregunta_dialogo] ¿Qué me advirtió Goruk? (4s) []
+   pasos=[('consult_world', {'topic': 'Goruk'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Goruk el tabernero te dijo: "Ya, ya. El bosque es un lugar oscuro y peligroso, sobre todo de noche. Si te decides a pasar, ten cuidado con los ruidos que salen de entre la maleza."'
+[pregunta_memoria] ¿Dónde estaban las hierbas? (17s) []
+   pasos=[('consult_world', {'topic': 'hierbas'}), ('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Las hierbas medicinales que recogiste están en el bosque, donde los árboles altos bloquean la luz y se escuchan ruidos entre la maleza. Estás en el bosque, y las hierbas medicinales se encuentran allí con tus otras pertenencias.'
+[pregunta_memoria] ¿Qué hice primero? (29s) []
+   pasos=[('consult_world', {'topic': 'acciones'}), ('check_state', {})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Primero hablaste con Goruk el tabernero, quien te advirtió sobre los peligros del bosque. Luego, visitaste la plaza y compraste una poción de curación en la taberna. Finalmente, recogiste hierbas medicinales en el bosque.'
+[pregunta_memoria] Resume en una frase lo que hice. (40s) []
+   pasos=[('consult_world', {'topic': ''})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Hablaste con Goruk el tabernero, quien te advirtió sobre el bosque, y luego compraste una poción de curación en la plaza a Elena la comerciante. Luego, entraste al bosque y recogiste hierbas medicinales.'
+[pregunta_memoria] ¿Cuántas veces cambié de lugar? (16s) []
+   pasos=[('check_state', {}), ('consult_world', {'topic': 'lugares'})]
+   bosque→bosque hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion', 'hierbas medicinales']
+   → 'Cambiaste de lugar tres veces: de la taberna a la plaza, de la plaza al bosque, y finalmente recogiste hierbas medicinales en el bosque.'
+EXIT 0

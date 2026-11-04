@@ -1,0 +1,5 @@
+Secuencia de evaluación: holdout3 (26 turnos)
+{'sistema': 'Baseline', 'jugadas': 52, 'seg_por_jugada': 1.38, 'llamadas_7b_por_jugada': 1.0, 'llamadas_72b_por_jugada': 0.0, 'tokens_entrada_por_jugada': 5699, 'tokens_salida_por_jugada': 207, 'embeddings_por_jugada': 0.0}
+{'sistema': 'Agente v1', 'jugadas': 52, 'seg_por_jugada': 0.71, 'llamadas_7b_por_jugada': 1.29, 'llamadas_72b_por_jugada': 0.0, 'tokens_entrada_por_jugada': 5354, 'tokens_salida_por_jugada': 122, 'embeddings_por_jugada': 0.0}
+{'sistema': 'Multi', 'jugadas': 52, 'seg_por_jugada': 11.44, 'llamadas_7b_por_jugada': 5.4, 'llamadas_72b_por_jugada': 3.29, 'tokens_entrada_por_jugada': 10438, 'tokens_salida_por_jugada': 612, 'embeddings_por_jugada': 7.21}
+guardado runs_v3_holdout3/costos_v3h.csv

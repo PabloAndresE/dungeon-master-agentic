@@ -1,0 +1,236 @@
+[
+ {
+  "t": 1,
+  "a": "Echo un vistazo a mi alrededor.",
+  "q": "¿Qué objetos veo por aquí?",
+  "ra": "Echas un vistazo a tu alrededor en la taberna. El olor a estofado caliente llega a tus narinas mientras un fuego crepita suavemente en la chimenea. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira desde detrás del mostrador. Unas cuerdas de antorcha colgadas en la pared añaden un toque de iluminación a la estancia. Puedes ir a la plaza o al bosque.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]",
+  "rq": "En la taberna, puedes ver una antorcha colgada en una de las paredes. Goruk el tabernero, un enano gruñón pero de buen corazón, está sirviendo bebidas a unos pocos clientes. El olor a estofado y la llama crepitante del fuego en la chimenea dan un ambiente cálido y acogedor. Puedes ir a la plaza o al bosque.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]",
+  "int_a": "otra",
+  "loc": "taberna"
+ },
+ {
+  "t": 2,
+  "a": "Agarro la antorcha.",
+  "q": "¿Qué tengo encima?",
+  "ra": "Recoges la antorcha. Goruk el tabernero te mira brevemente antes de volver a su tarea, sirviendo bebidas a los clientes. La antorcha está en tu mano, lista para ser utilizada si es necesario.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "rq": "Llevas: espada oxidada, pocion de curacion, antorcha. En la taberna, la tenue luz matutina filtrase a través de las cortinas de cuerdas, iluminando tenazmente la sala con destellos cálidos que se mezclan con el brillo de la hoguera en la chimenea, creando una atmósfera acogedora.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "int_a": "recoger",
+  "loc": "taberna"
+ },
+ {
+  "t": 3,
+  "a": "Charlo con Goruk el tabernero.",
+  "q": "¿Qué me contó Goruk?",
+  "ra": "Hablas con Goruk el tabernero.\nGoruk el tabernero: \"Puedo servirte estofado, cerveza o agua. El bosque es peligroso de noche, dicen que se oyen ruidos entre la maleza.\"\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "rq": "Goruk el tabernero te dijo: \"Puedo servirte estofado, cerveza o agua. El bosque es peligroso de noche, dicen que se oyen ruidos entre la maleza.\"\n\n[HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "int_a": "hablar",
+  "loc": "taberna"
+ },
+ {
+  "t": 4,
+  "a": "Me dirijo al bosque.",
+  "q": "¿Dónde estoy?",
+  "ra": "Llegas al bosque y te encuentras con árboles altos que bloquean la luz del sol, proyectando sombras inquietantes. Se escuchan ruidos entre la maleza, haciendo que tu antorcha tembleque en tus manos. No ves a nadie, pero las hierbas medicinales que has recogido brillan suavemente a tu pies.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "rq": "Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. El bosque se extiende en penumbras, aunque el mediodía intenta filtrar su luz tenue a través de las copas de los árboles, creando sombras danzantes en el suelo.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "int_a": "mover",
+  "loc": "bosque"
+ },
+ {
+  "t": 5,
+  "a": "Intento ir a la herrería desde aquí.",
+  "q": "¿Llegué a la herrería?",
+  "ra": "No puedes ir directamente desde el bosque a la herrería. La ruta más corta es: bosque → plaza → herreria.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "rq": "No llegaste a la herrería. La ruta más corta desde el bosque a la herrería es: bosque → plaza → herrería. Al parecer, sigues en el bosque, rodeado de árboles altos y ruidos que se escuchan entre la maleza. La antorcha en tus manos temblequea, iluminando tu camino a la plaza.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha]",
+  "int_a": "mover",
+  "loc": "bosque"
+ },
+ {
+  "t": 6,
+  "a": "Cojo las hierbas medicinales.",
+  "q": "¿Qué llevo ahora?",
+  "ra": "Recogiste las hierbas medicinales. Ahora tu inventario incluye: espada oxidada, poción de curación, antorcha y hierbas medicinales. No llegaste directamente a la herrería, pero sigues en el bosque. Puedes dirigirte a la plaza y desde allí a la herrería siguiendo la ruta más corta.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Llevas: espada oxidada, pocion de curacion, antorcha, hierbas medicinales. El bosque se derrama en sombras densas, apenas iluminado por rayos de sol que se filtran entre las copas de los árboles, creando patrones de luz y sombra en el suelo.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "recoger",
+  "loc": "bosque"
+ },
+ {
+  "t": 7,
+  "a": "Según las reglas, ¿qué estadísticas tiene un lobo?",
+  "q": "¿Qué pasa si me muerde?",
+  "ra": "STR 12 DEX 15 CON 12 INT 3 WIS 12 CHA 6\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Cada arma, hechizo y habilidad dañina de un monstruo especifica el daño que inflige. Tiras el(s) dado(s) de daño, añades cualquier modificador y aplicas el daño a tu objetivo.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_reglas",
+  "loc": "bosque"
+ },
+ {
+  "t": 8,
+  "a": "Me adentro en la cueva.",
+  "q": "¿Dónde me encuentro?",
+  "ra": "Llegas a una cueva oscura y humeda, con huesos viejos esparcidos por el suelo. En el centro de la cueva, un goblin centinela te observa con desconfianza. No hay luz, solo la tenue antorcha que llevas. El goblin ataca sin dudar. Reglas: \n- El goblin centinela ataca con su daga, causando 4d6 de daño (promedio 14 de daño). - Si tienes 20 o menos de HP, el golpe puede ser crítico, infligiendo doble daño. ¿Qué harás?\n\n[HP: 20/20 | Oro: 15 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Estás en cueva. Desde aquí puedes ir a: bosque. En la cueva, la tenue luz del atardecer se filtra a través de diminutas grietas, iluminando tenazmente el suelo húmedo y las paredes salpicadas de gotas.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "cueva"
+ },
+ {
+  "t": 9,
+  "a": "Lucho contra el goblin.",
+  "q": "¿Cuántos puntos de vida tengo?",
+  "ra": "Atacas a Goblin centinela con tu espada oxidada (tirada 11 contra CA 15): fallas. Goblin centinela te ataca (tirada 6 contra tu CA 14): falla. Te quedan 20/20 PG.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: cueva | Momento: tarde | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Tienes 20/20 puntos de vida. En la cueva oscura y humeda, la tenue luz del atardecer se filtra a través de pequeñas grietas en el techo, proyectando sombras distorsionadas sobre el suelo cubierto de huesos viejos y desecados.\n\n[HP: 20/20 | Oro: 15 | Ubicacion: cueva | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "atacar",
+  "loc": "cueva"
+ },
+ {
+  "t": 10,
+  "a": "Recojo el oro del cofre.",
+  "q": "¿Cuánto oro tengo ahora?",
+  "ra": "Recoges 50 monedas de oro del cofre. Ahora tienes 65 monedas de oro.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Tienes 65 monedas de oro. En la cueva, la tenue luz del atardecer se filtra a través de pequeñas grietas, iluminando tenue y oscilante las paredes rocosas mientras un aroma húmedo y primordial impregna el aire, mezclado con el olor lejano de la tierra mojada.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "recoger",
+  "loc": "cueva"
+ },
+ {
+  "t": 11,
+  "a": "Exploro un rincón oscuro de la cueva por si hay un túnel.",
+  "q": "¿Descubrí algo?",
+  "ra": "Exploras un rincón oscuro de la cueva y descubres un oscuro pasadizo que se desvía hacia el este, apenas visibles bajo la tenue luz de la antorcha. Descubres un lugar nuevo: tunel_secreto (Un oscuro pasadizo se desvía hacia el este, apenas visibles bajo la tenue luz de la antorcha.). Se llega desde: cueva.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Sí: encontraste un lugar nuevo: tunel secreto.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "explorar",
+  "loc": "cueva"
+ },
+ {
+  "t": 12,
+  "a": "Atravieso lo que acabo de descubrir.",
+  "q": "¿En qué lugar estoy?",
+  "ra": "Llegas a tunel_secreto. Llegas al oscuro pasadizo que se desvía hacia el este, apenas visibles bajo la tenue luz de la antorcha. Sigues avanzando con cautela, las hierbas medicinales en tu mano temblorosa lista en caso de necesidad.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: tunel_secreto | Momento: atardecer | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Estás en tunel secreto. Desde aquí puedes ir a: cueva.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: tunel_secreto | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "tunel_secreto"
+ },
+ {
+  "t": 13,
+  "a": "Según las reglas, ¿cuántos puntos de golpe tiene un esqueleto?",
+  "q": "¿Es inmune a algo?",
+  "ra": "Según las reglas, un esqueleto tiene 13 puntos de golpe (2d8).\n\n[HP: 20/20 | Oro: 65 | Ubicacion: tunel_secreto | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Sí, es inmune a veneno.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: tunel_secreto | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_reglas",
+  "loc": "tunel_secreto"
+ },
+ {
+  "t": 14,
+  "a": "Regreso a la cueva.",
+  "q": "¿Puedo volver a ese lugar nuevo?",
+  "ra": "Llegas a la cueva, que es oscura y humeda, con huesos viejos esparcidos por el suelo. Un goblin centinela te observa con desconfianza. No hay nada más que ver por ahora.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Sí: desde cueva puedes ir directamente a tunel secreto.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: cueva | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "cueva"
+ },
+ {
+  "t": 15,
+  "a": "Camino hasta el bosque.",
+  "q": "¿Dónde estoy?",
+  "ra": "Llegas al bosque, donde los árboles altos bloquean la luz, dejando que solo se escuchen ruidos entre la maleza. Tu antorcha temblequea, iluminando tu camino a través de la oscuridad. Se oyen susurros y crujidos que te hacen mantenerte alerta.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: bosque | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. El bosque se derrama en penumbras, solo roto por la tenue luna que se filtra entre los altos árboles, proyectando sombras danzantes sobre el suelo.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: bosque | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "bosque"
+ },
+ {
+  "t": 16,
+  "a": "Sigo hacia la plaza.",
+  "q": "¿Dónde estoy ahora?",
+  "ra": "Llegas a la plaza central del pueblo. Elena la comerciante, una figura conocida en el pueblo, se encuentra aquí, atenta y dispuesta a negociar.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Estás en plaza. Desde aquí puedes ir a: taberna, herreria, bosque. La plaza central está bañada por la tenue luz de faroles de aceite, proyectando sombras danzantes sobre la piedra pulida de la fuente, mientras el aire fresco trae consigo el olor a jazmín y la lejanía de una noche de verano.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "plaza"
+ },
+ {
+  "t": 17,
+  "a": "Busco algún forastero en la plaza al que no conozca.",
+  "q": "¿Hay alguien nuevo?",
+  "ra": "Estás en la plaza. Tiriel el Viajero, un hombre de aspecto fuerte con barba incipiente y ropa de viaje desgastada, camina por la plaza mirando alrededor. Parece un mercader de tierras lejanas que ha llegado recientemente al pueblo en busca de nuevas oportunidades.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "En la plaza central del pueblo, observas a Tiriel el Viajero, un hombre de aspecto fuerte que camina alrededor, mirando con curiosidad. Elena la comerciante, una astuta mujer de negocios, también pasea por la plaza. No hay nuevos personajes que se hayan unido a la aventura en esta jugada.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "explorar",
+  "loc": "plaza"
+ },
+ {
+  "t": 18,
+  "a": "¿Qué hace exactamente una bolsa de contención según las reglas?",
+  "q": "¿Cuánto peso aguanta?",
+  "ra": "Esta bolsa tiene un espacio interno mucho más grande que sus dimensiones exteriores, con un diámetro de boca de aproximadamente 2 pies y una profundidad de 4 pies. Puede contener hasta 500 libras, sin superar un volumen de 64 pies cúbicos. La bolsa pesa 15 libras, independientemente de su contenido. Extraer un objeto de la bolsa requiere una acción. Si la bolsa está sobrecargada, atravesada o rasgada, se rompe y se destruye, y sus contenidos se dispersan en el Plano Astral. Si se gira la bolsa al revés, sus contenidos salen sin daño, pero la bolsa debe ser puesta derecha antes de poder usarse de nuevo. Los seres vivos que respiran dentro de la bolsa pueden sobrevivir hasta un número de minutos igual a 10 dividido entre el número de seres (mínimo 1 minuto), después de lo cual comienzan a ahogarse.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "El saco puede llevar hasta 500 libras, sin superar un volumen de 64 pies cúbicos.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_reglas",
+  "loc": "plaza"
+ },
+ {
+  "t": 19,
+  "a": "Me curo con la poción.",
+  "q": "¿Todavía tengo la poción?",
+  "ra": "Ya tienes la vida al maximo (20/20): guardas la pocion.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Sí, llevas pocion de curacion. La plaza central del pueblo se ilumina tenue con la luz de las farolas de hierro forjado, proyectando sombras danzantes sobre las paredes de piedra.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: plaza | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "curarse",
+  "loc": "plaza"
+ },
+ {
+  "t": 20,
+  "a": "Paso a la herrería.",
+  "q": "¿Dónde estoy?",
+  "ra": "Entras en la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes. Bron el herrero, un herrero fornido y orgulloso de su oficio, te mira con curiosidad. NPC: Bron el herrero\n- Conoce a Goruk el tabernero, quien es un cliente habitual de la herrería.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Estás en herreria. Desde aquí puedes ir a: plaza.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "mover",
+  "loc": "herreria"
+ },
+ {
+  "t": 21,
+  "a": "Según las reglas, ¿cuánto ayuda estar detrás de media cobertura?",
+  "q": "¿Y si la cobertura es de tres cuartos?",
+  "ra": "Según las reglas, estar detrás de media cobertura da un bono de +2 a la AC y a las tiradas de salvación de Destreza.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Un objetivo con tres cuartos de cobertura tiene un bono de +5 en la AC y en las tiradas de salvación de Destreza.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_reglas",
+  "loc": "herreria"
+ },
+ {
+  "t": 22,
+  "a": "¿Cómo vuelvo a la cueva desde aquí?",
+  "q": "¿Qué lugares atravieso?",
+  "ra": "La ruta más corta de herreria a cueva es: herreria → plaza → bosque → cueva.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "La ruta más corta de herreria a cueva es: herreria → plaza → bosque → cueva.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_memoria",
+  "loc": "herreria"
+ },
+ {
+  "t": 23,
+  "a": "¿Quién me advirtió del bosque?",
+  "q": "¿Con qué palabras?",
+  "ra": "Goruk el tabernero te dijo: \"Puedo servirte estofado, cerveza o agua. El bosque es peligroso de noche, dicen que se oyen ruidos entre la maleza.\"\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Goruk el tabernero, un cliente habitual del herrero, te advirtió:\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_memoria",
+  "loc": "herreria"
+ },
+ {
+  "t": 24,
+  "a": "Reviso todo lo que llevo.",
+  "q": "¿Qué tengo exactamente?",
+  "ra": "Llevas: espada oxidada, pocion de curacion, antorcha, hierbas medicinales. La herrería está bañada por la tenue luz de una lumbre que danza en la oscuridad, proyectando sombras distorsionadas en las paredes.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Llevas: espada oxidada, pocion de curacion, antorcha, hierbas medicinales. La herrería está bañada por la tenue luz de una luna llena, filtrándose a través de las rendijas de las cortinas de telaraña.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_estado",
+  "loc": "herreria"
+ },
+ {
+  "t": 25,
+  "a": "¿Cuántos sitios nuevos encontré?",
+  "q": "¿Cuáles son?",
+  "ra": "Descubriste 1 lugar nuevo: tunel secreto (se llega desde cueva).\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "Descubriste 1 lugar nuevo: tunel secreto (se llega desde cueva).\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_memoria",
+  "loc": "herreria"
+ },
+ {
+  "t": 26,
+  "a": "Hazme un resumen de la aventura.",
+  "q": "¿Qué fue lo más importante?",
+  "ra": "### Resumen de la Aventura\n\nComenzaste tu viaje en la taberna, donde conociste a Goruk el tabernero, quien te ofreció estofado, cerveza o agua. Goruk también advirtió que el bosque es peligroso de noche, mencionando que se oyen ruidos entre la maleza. Decidiste explorar el bosque, donde encontraste una hierba medicinal y combatió con un Goblin centinela, fallando en tu intento de atacarlo. Luego, descubriste un cofre con 50 monedas de oro, aumentando tu tesoro a 115 monedas de oro. En tu exploración, descubriste un tunel secreto que conecta con la cueva, donde encontraste huesos esparcidos. Luego, regresaste a la cueva y finalmente a la plaza, donde encontraste a Tiriel el Viajero, un hombre fuerte que parecía estar buscando oportunidades en el pueblo. Finalmente, llegaste a la herrería, donde Bron el herrero, un amigo de Goruk, te recibió. La herrería está llena de espadas y escudos, y el calor del horno es sofocante. En resumen, descubriste 1 lugar nuevo: el tunel secreto, y tu inventario incluye una espada oxidada, una poción de curación, una antorcha, hierbas medicinales, y 115 monedas de oro.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "rq": "El jugador se encuentra en la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes. Bron el herrero, un herrero fornido y orgulloso, está trabajando. El jugador ha visitado varios lugares en la aventura, pero en este momento, lo más importante es que se encuentra en la herrería, un lugar donde puede obtener información valiosa o incluso adquirir nuevas armas y armaduras.\n\n[HP: 20/20 | Oro: 65 | Ubicacion: herreria | Momento: noche | Inventario: espada oxidada, pocion de curacion, antorcha, hierbas medicinales]",
+  "int_a": "pregunta_memoria",
+  "loc": "herreria"
+ }
+]

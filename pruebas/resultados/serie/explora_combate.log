@@ -1,0 +1,65 @@
+[atacar] Ataco a Goruk. (2s) []
+   pasos=[('attack_enemy', {'enemy_name': 'Goruk el tabernero'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Goruk el tabernero no es hostil.'
+[pregunta_estado] ¿Cuánta vida tengo? (1s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Tienes 20/20 puntos de vida. En la taberna, la luz cálida y parpadeante de las velas y el fuego crepitante en la chimenea baña las caras de los clientes con sombras danzantes, mientras se difumina el aroma reconfortante de estofado que fluye desde la cocina, invitando a todos a sumergirse en un agradable calor.'
+[curarse] Me tomo la poción. (17s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Bebes la poción y sientes cómo tu cuerpo se regenera. Recuperas 8 puntos de vida, llegando a 20/20. El sabor amargo de la poción se mezcla con el aroma del estofado que fluye desde la cocina, haciendo que tu estómago gruña de forma agradable.'
+[curarse] Me tomo otra poción. (2s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada']
+   → "No tienes pociones. Inventario: ['espada oxidada']"
+[mover] Voy al bosque. (9s) []
+   pasos=[]
+   taberna→bosque hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Has llegado al bosque. Los altos árboles bloquean la luz, y se escuchan ruidos entre la maleza. Ves algunas hierbas medicinales dispersas por el suelo.'
+[atacar] Ataco al lobo. (25s) []
+   pasos=[]
+   bosque→bosque hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'No hay lobos ni otros personajes presentes en el bosque. Observas tu entorno y ves que las hierbas medicinales podrían ser útiles en el futuro. Decides explorar un poco más.'
+[mover] Voy a la cueva. (14s) []
+   pasos=[]
+   bosque→cueva hp 20→20 oro 15→15 inv ['espada oxidada']
+   → 'Llegas a la cueva, que es oscura y humeda. Huesos viejos están esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te observa con hostilidad.'
+[atacar] Ataco al goblin. (45s) []
+   pasos=[]
+   cueva→cueva hp 20→12 oro 15→15 inv ['espada oxidada']
+   → 'Has atacado al goblin centinela con tu espada oxidada. El goblin contraataca y te causa 8 puntos de daño. El goblin sigue en pie, con 2 puntos de vida restantes.'
+[atacar] Ataco al goblin. (41s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → 'Has atacado al goblin centinela nuevamente. Este ataque causa 4 puntos de daño, reduciendo sus puntos de vida a 0. El goblin cae inconsciente al suelo. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubierta'
+[atacar] Ataco al goblin. (28s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → 'El goblin cae inconsciente al suelo. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosq'
+[atacar] Ataco al goblin. (27s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → 'Tu espada oxidada causa 5 puntos de daño, reduciendo sus puntos de vida a 0. El goblin cae inconsciente. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insop'
+[atacar] Ataco al goblin. (3s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → "No hay enemigo 'goblin' aqui. NPCs: nadie"
+[pregunta_memoria] ¿El goblin sigue vivo? (17s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → 'El goblin centinela sigue inconsciente en el suelo. Recoges el cofre que ha caído y encuentras 50 monedas de oro. Las añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosque. Ruta '
+[atacar] Ataco al goblin otra vez. (3s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→15 inv ['espada oxidada']
+   → "No hay enemigo 'Goblin centinela' aqui. NPCs: nadie"
+[recoger] Recojo lo que haya dejado el goblin. (2s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 15→65 inv ['espada oxidada']
+   → "No hay 'cofre' aqui. Objetos disponibles: ['cofre con 50 monedas de oro']"
+[pregunta_estado] ¿Cuánta vida me queda? (2s) []
+   pasos=[]
+   cueva→cueva hp 12→12 oro 65→65 inv ['espada oxidada']
+   → 'Tienes 12/20 puntos de vida. En la cueva, la penumbra apenas ilumina el suelo mojado y resbaladizo, mientras un hedor a podredumbre y humedad se cuela en el aire, acompañado por el crujir de huesos desgastados y el eco de gotas que caen del techo rocoso.'
+EXIT 0

@@ -1,0 +1,96 @@
+{
+  "_descripcion": "Contenido de autor del mundo (v3): lugares y estado inicial. Los PERSONAJES viven en data/personajes/*.md (una ficha por NPC: encabezado YAML con datos exactos + secciones en prosa que se recuperan por RAG). Los NPCs creados en la partida los genera el WorldBuilder.",
+  "locations": {
+    "taberna": {
+      "description": "Una taberna calida con olor a estofado. Un fuego crepita en la chimenea.",
+      "connections": [
+        "plaza",
+        "bosque"
+      ],
+      "items": [
+        "antorcha"
+      ],
+      "npcs": [
+        "Goruk el tabernero"
+      ],
+      "dynamic": false
+    },
+    "plaza": {
+      "description": "La plaza central del pueblo. Una fuente de piedra en el centro.",
+      "connections": [
+        "taberna",
+        "herreria",
+        "bosque"
+      ],
+      "items": [],
+      "npcs": [
+        "Elena la comerciante"
+      ],
+      "dynamic": false
+    },
+    "herreria": {
+      "description": "El calor del horno es sofocante. Espadas y escudos cuelgan de las paredes.",
+      "connections": [
+        "plaza"
+      ],
+      "items": [
+        "escudo de hierro"
+      ],
+      "npcs": [
+        "Bron el herrero"
+      ],
+      "dynamic": false
+    },
+    "bosque": {
+      "description": "Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.",
+      "connections": [
+        "plaza",
+        "taberna",
+        "cueva"
+      ],
+      "items": [
+        "hierbas medicinales"
+      ],
+      "npcs": [],
+      "dynamic": false
+    },
+    "cueva": {
+      "description": "Una cueva oscura y humeda. Huesos viejos esparcidos por el suelo.",
+      "connections": [
+        "bosque"
+      ],
+      "items": [
+        "cofre con 50 monedas de oro"
+      ],
+      "npcs": [
+        "Goblin centinela"
+      ],
+      "dynamic": false
+    }
+  },
+  "estado_inicial": {
+    "player_name": "Aventurero",
+    "hp": 20,
+    "max_hp": 20,
+    "gold": 15,
+    "inventory": [
+      "espada oxidada",
+      "pocion de curacion"
+    ],
+    "location": "taberna",
+    "events": [],
+    "items_taken": [],
+    "enemies_defeated": []
+  },
+  "reglas_combate": {
+    "_nota": "Mecánica D&D 5e simplificada (v3): guerrero de nivel 1 (ataque +5, CA 14 con armadura ligera; +2 con escudo). Los stats de los enemigos salen del SRD (srd_ref). Simulación (2000 peleas vs goblin): ~4 rondas, ~9 de daño recibido, 13% llega a 0 PG (9% con escudo); con +2/CA 10 era 42%.",
+    "ca_jugador": 14,
+    "bonus_escudo": 2,
+    "bonificador_ataque": 5,
+    "dano_arma": {
+      "espada oxidada": "1d6",
+      "espada afilada": "1d8"
+    },
+    "dano_sin_arma": "1d4"
+  }
+}

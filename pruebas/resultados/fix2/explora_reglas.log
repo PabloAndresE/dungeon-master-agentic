@@ -1,0 +1,45 @@
+[pregunta_reglas] Según las reglas, ¿qué tan peligroso es un dragón rojo adulto? (6s) []
+   pasos=[('consultar_reglas', {'consulta': 'Según las reglas, ¿qué tan peligroso es un dragón rojo adulto?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Según las reglas, un dragón rojo adulto tiene una clase de armadura de 19, 19d12 puntos de golpe y un valor de desafío de 17 (18000 XP).'
+[pregunta_reglas] ¿Y su aliento? (8s) []
+   pasos=[('consultar_reglas', {'consulta': 'Según las reglas, ¿qué tan peligroso es un dragón rojo adulto? ¿Y su aliento?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'El drago exhala fuego en un cono de 60 pies. Cada criatura en ese área debe hacer una tirada de salvación deDestreza DC 21, tomando 63 (18d6) puntos de daño de fuego en un fallo, o la mitad de ese daño en un éxito.'
+[pregunta_reglas] ¿Cuánto daño hace una bola de fuego? (9s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Cuánto daño hace una bola de fuego?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Un objetivo recibe 8d6 daño de fuego en caso de una tirada de salvación fallida, o la mitad de ese daño en caso de una tirada de salvación exitosa.'
+[pregunta_reglas] ¿A qué nivel se puede subir? (8s) []
+   pasos=[('consultar_reglas', {'consulta': '¿A qué nivel se puede subir?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'El nivel mágico de un hechizo va desde 0 hasta 9. Los hechizos cantrip, simples pero poderosos hechizos que los personajes pueden lanzar casi de memoria, son de nivel 0.'
+[pregunta_reglas] ¿Qué daño hace una espada larga a dos manos? (4s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Qué daño hace una espada larga a dos manos?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Una espada larga a dos manos hace daño cortante de 1d10.'
+[pregunta_reglas] ¿Qué pasa si estoy envenenado? (12s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Qué pasa si estoy envenenado?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Al inicio de cada uno de tus turnos mientras estés envenenado de esta manera, tomas 3d6 daño venenoso. Al final de cada uno de tus turnos, puedes repetir la tirada de salvación. Con una tirada exitosa, el daño venenoso que tomes en turnos posteriores disminuye en 1d6. El envenenamiento termina cuando el daño disminuye a 0.'
+[pregunta_reglas] ¿Cuánto cura un descanso corto? (12s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Cuánto cura un descanso corto?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Un personaje puede gastar uno o más dados de golpe al final de un descanso corto, hasta el número máximo de dados de golpe del personaje, que es igual al nivel del personaje. Para cada dado de golpe gastado de esta manera, el jugador tira el dado y suma el modificador de Constitución del personaje a él. El personaje recupera puntos de golpe iguales'
+[pregunta_reglas] ¿Cuánto cuesta una cuerda de cáñamo según las reglas? (5s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Cuánto cuesta una cuerda de cáñamo según las reglas?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Una cuerda de cáñamo cuesta 1 gp.'
+[pregunta_estado] ¿Dónde estoy? (4s) []
+   pasos=[('check_state', {})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en taberna. Desde aquí puedes ir a: plaza, bosque. En la taberna, la luz cálida y difusa del mediodía se filtra a través de las cortinas, bañando el local con un resplandor amarillento que se mezcla con las llamas de la chimenea, creando un ambiente acogedor.'
+[pregunta_reglas] ¿Qué es un beholder? (5s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Qué es un beholder?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No encontré eso en las reglas oficiales que tengo (SRD 5.1).'
+[pregunta_reglas] ¿Qué hace la ventaja? (6s) []
+   pasos=[('consultar_reglas', {'consulta': '¿Qué hace la ventaja?'})]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Cuando ocurre esto, lanzas un segundo d20 cuando realizas el rollo. Usas el rollo más alto si tienes ventaja, y usas el rollo más bajo si tienes desventaja.'
+EXIT 0

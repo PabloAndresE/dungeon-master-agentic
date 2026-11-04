@@ -1,0 +1,21 @@
+[NbConvertApp] Converting notebook proyecto_final_v2_corregido_run.ipynb to notebook
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+[IPKernelApp] WARNING | Error in loading extension: google.colab
+Check your config files in /root/.ipython/profile_default
+Traceback (most recent call last):
+  File "/opt/venv-ragas/lib/python3.11/site-packages/IPython/core/shellapp.py", line 332, in init_extensions
+    self.shell.extension_manager.load_extension(ext)
+  File "/opt/venv-ragas/lib/python3.11/site-packages/IPython/core/extensions.py", line 61, in load_extension
+    return self._load_extension(module_str)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv-ragas/lib/python3.11/site-packages/IPython/core/extensions.py", line 76, in _load_extension
+    mod = import_module(module_str)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'google.colab'
+[NbConvertApp] Writing 595974 bytes to runs_corregido/v2_run2.ipynb

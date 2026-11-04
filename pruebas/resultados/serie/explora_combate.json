@@ -1,0 +1,415 @@
+[
+ {
+  "a": "Ataco a Goruk.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "attack_enemy",
+    {
+     "enemy_name": "Goruk el tabernero"
+    },
+    "LA ACCIÓN NO SE EJECUTÓ (el estado no cambió). Goruk el tabernero no es hostil."
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Goruk el tabernero no es hostil.",
+  "flags": [],
+  "t": 1.7,
+  "err": null
+ },
+ {
+  "a": "¿Cuánta vida tengo?",
+  "intencion": "pregunta_estado",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Tienes 20/20 puntos de vida. En la taberna, la luz cálida y parpadeante de las velas y el fuego crepitante en la chimenea baña las caras de los clientes con sombras danzantes, mientras se difumina el aroma reconfortante de estofado que fluye desde la cocina, invitando a todos a sumergirse en un agradable calor.",
+  "flags": [],
+  "t": 1.2,
+  "err": null
+ },
+ {
+  "a": "Me tomo la poción.",
+  "intencion": "curarse",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Bebes la poción y sientes cómo tu cuerpo se regenera. Recuperas 8 puntos de vida, llegando a 20/20. El sabor amargo de la poción se mezcla con el aroma del estofado que fluye desde la cocina, haciendo que tu estómago gruña de forma agradable.",
+  "flags": [],
+  "t": 16.7,
+  "err": null
+ },
+ {
+  "a": "Me tomo otra poción.",
+  "intencion": "curarse",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "No tienes pociones. Inventario: ['espada oxidada']",
+  "flags": [],
+  "t": 1.9,
+  "err": null
+ },
+ {
+  "a": "Voy al bosque.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Has llegado al bosque. Los altos árboles bloquean la luz, y se escuchan ruidos entre la maleza. Ves algunas hierbas medicinales dispersas por el suelo.",
+  "flags": [],
+  "t": 9.0,
+  "err": null
+ },
+ {
+  "a": "Ataco al lobo.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "No hay lobos ni otros personajes presentes en el bosque. Observas tu entorno y ves que las hierbas medicinales podrían ser útiles en el futuro. Decides explorar un poco más.",
+  "flags": [],
+  "t": 24.6,
+  "err": null
+ },
+ {
+  "a": "Voy a la cueva.",
+  "intencion": "mover",
+  "pasos": [],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Llegas a la cueva, que es oscura y humeda. Huesos viejos están esparcidos por el suelo. Un goblin centinela, desconfiado y agresivo, te observa con hostilidad.",
+  "flags": [],
+  "t": 14.0,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Has atacado al goblin centinela con tu espada oxidada. El goblin contraataca y te causa 8 puntos de daño. El goblin sigue en pie, con 2 puntos de vida restantes.",
+  "flags": [],
+  "t": 44.7,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Has atacado al goblin centinela nuevamente. Este ataque causa 4 puntos de daño, reduciendo sus puntos de vida a 0. El goblin cae inconsciente al suelo. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosque.",
+  "flags": [],
+  "t": 41.5,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "El goblin cae inconsciente al suelo. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosque.",
+  "flags": [],
+  "t": 28.4,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Tu espada oxidada causa 5 puntos de daño, reduciendo sus puntos de vida a 0. El goblin cae inconsciente. En el cofre que el goblin dejó caer al suelo, encuentras 50 monedas de oro. Las recoges y añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosque. Ruta más corta: Al bosque (conduce desde la entrada de la cueva).",
+  "flags": [],
+  "t": 26.9,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "No hay enemigo 'goblin' aqui. NPCs: nadie",
+  "flags": [],
+  "t": 3.1,
+  "err": null
+ },
+ {
+  "a": "¿El goblin sigue vivo?",
+  "intencion": "pregunta_memoria",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "El goblin centinela sigue inconsciente en el suelo. Recoges el cofre que ha caído y encuentras 50 monedas de oro. Las añades a tu tesoro. Ahora que el peligro ha pasado, puedes explorar más la cueva. Las paredes están cubiertas de hongos verdes y el olor a humedad es insoportable. A la entrada de la cueva, ves un pasaje que conduce al bosque. Ruta más corta: Al bosque (conduce desde la entrada de la cueva).",
+  "flags": [],
+  "t": 17.5,
+  "err": null
+ },
+ {
+  "a": "Ataco al goblin otra vez.",
+  "intencion": "atacar",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "No hay enemigo 'Goblin centinela' aqui. NPCs: nadie",
+  "flags": [],
+  "t": 3.3,
+  "err": null
+ },
+ {
+  "a": "Recojo lo que haya dejado el goblin.",
+  "intencion": "recoger",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "No hay 'cofre' aqui. Objetos disponibles: ['cofre con 50 monedas de oro']",
+  "flags": [],
+  "t": 2.2,
+  "err": null
+ },
+ {
+  "a": "¿Cuánta vida me queda?",
+  "intencion": "pregunta_estado",
+  "pasos": [],
+  "antes": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "despues": {
+   "location": "cueva",
+   "hp": 12,
+   "gold": 65,
+   "inventory": [
+    "espada oxidada"
+   ]
+  },
+  "resp": "Tienes 12/20 puntos de vida. En la cueva, la penumbra apenas ilumina el suelo mojado y resbaladizo, mientras un hedor a podredumbre y humedad se cuela en el aire, acompañado por el crujir de huesos desgastados y el eco de gotas que caen del techo rocoso.",
+  "flags": [],
+  "t": 2.0,
+  "err": null
+ }
+]

@@ -1,0 +1,28 @@
+<section id="conclusiones" data-transition="fade" style="background:#1c1f26;color:#f2eee4;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;color:#e58a4e;letter-spacing:4px;text-transform:uppercase;font-weight:600">Conclusiones</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:68px;font-weight:600;line-height:1.1;color:#f2eee4">Separar los hechos del modelo es lo que funciona</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;border-top:6px solid #1baf7a;padding-top:28px">
+<h3 style="font-size:34px;font-weight:600;color:#4fd1a0">Qué funcionó</h3>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">Anclar cada respuesta a su fuente: ~70 → ~92.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">RAG en reglas: 37 → 81; grafo en memoria: 55 → 93.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">Partidas nuevas y un juez más grande para medir de verdad.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;border-top:6px solid #e58a4e;padding-top:28px">
+<h3 style="font-size:34px;font-weight:600;color:#e58a4e">Qué no funcionó</h3>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">Herramientas solas: 67, por debajo del baseline e inestable.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">La primera versión estaba sobreajustada: empate en el hold-out 1.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">La v3: solo +3.7 en el hold-out 3 y 9.4 s por jugada.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;border-top:6px solid #9a958a;padding-top:28px">
+<h3 style="font-size:34px;font-weight:600;color:#c9c4b8">Límites</h3>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">No es una ablación: cambian varias piezas a la vez.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">Grafo con búsqueda local de GraphRAG, sin comunidades.</p>
+<p style="font-size:26px;line-height:1.4;color:#f2eee4">26 turnos, 3 corridas, un modelo de 7B y un juez Qwen.</p>
+</div>
+</div>
+<p style="position:absolute;right:128px;bottom:64px;width:600px;font-size:28px;color:#e58a4e;text-align:right;font-weight:600">¿Preguntas?</p>
+<aside>(≈35 s) Qué funcionó: anclar cada respuesta a su fuente, estado en Python, reglas por RAG e historia en el grafo, de 70 a 92; y medir con partidas nuevas. Qué no: el agente solo, mi primera versión sobreajustada y la v3, que gana poco y es lenta. Límites: no es una ablación, solo búsqueda local de GraphRAG y una muestra chica. Gracias, ¿preguntas?</aside>
+</section>

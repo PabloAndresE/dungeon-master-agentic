@@ -1,0 +1,20 @@
+<section id="resultados" data-transition="fade" style="background:#f5f1e8;color:#1c1f26;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:space-between;gap:28px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;color:#a3471a;letter-spacing:4px;text-transform:uppercase;font-weight:600">Resultados · hold-out 2 · 3 corridas</p>
+<h2 style="font-family:'EB Garamond', Georgia, serif;font-size:68px;font-weight:600;line-height:1.1">+22 puntos, a cambio de ~2× tiempo y ~4× llamadas</h2>
+</div>
+<table style="font-family:'IBM Plex Sans', Arial, sans-serif;font-size:28px;color:#1c1f26">
+<tr><th style="width:37%;text-align:left"></th><th style="width:19%;text-align:right">Baseline</th><th style="width:19%;text-align:right">Agéntico</th><th style="width:25%;text-align:right">Agéntico + RAG + grafo</th></tr>
+<tr style="background:#ece6d8"><td><b>Calidad</b></td><td></td><td></td><td></td></tr>
+<tr><td>Nota del juez (0–100)</td><td style="text-align:right">69.8 ± 2.3</td><td style="text-align:right">67.0 ± 6.4</td><td style="text-align:right"><b>91.8 ± 2.1</b></td></tr>
+<tr><td>Faithfulness (RAGAS) vs texto del SRD</td><td style="text-align:right">0.28</td><td style="text-align:right">0.18</td><td style="text-align:right"><b>0.72</b></td></tr>
+<tr><td>Keywords acertadas (de 26)</td><td style="text-align:right">18.7</td><td style="text-align:right">20.7</td><td style="text-align:right"><b>23.0</b></td></tr>
+<tr style="background:#ece6d8"><td><b>Costo por jugada</b></td><td></td><td></td><td></td></tr>
+<tr><td>Tiempo</td><td style="text-align:right">1.1 s</td><td style="text-align:right">0.6 s</td><td style="text-align:right">2.2 s</td></tr>
+<tr><td>Llamadas al LLM</td><td style="text-align:right">1.0</td><td style="text-align:right">1.3</td><td style="text-align:right">4.4</td></tr>
+<tr><td>Tokens de entrada</td><td style="text-align:right">5 783</td><td style="text-align:right">5 984</td><td style="text-align:right">6 336</td></tr>
+<tr><td>Memoria de los modelos</td><td style="text-align:right">4.7 GB</td><td style="text-align:right">4.7 GB</td><td style="text-align:right">5.9 GB</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6b6f78">El juez 72B (47 GB) solo evalúa y no se cuenta en el costo. Tiempo: corridas oficiales; llamadas y tokens: contador sobre las llamadas a Ollama.</p>
+<aside>(≈30 s) Resultados con la misma medida: baseline 70, agéntico 67 y la propuesta 92; RAGAS en reglas sube de 0.18 a 0.72. El costo: unas dos veces el tiempo y cuatro veces las llamadas del baseline, con tokens parecidos.</aside>
+</section>

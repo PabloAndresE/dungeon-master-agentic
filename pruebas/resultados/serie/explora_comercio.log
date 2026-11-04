@@ -1,0 +1,53 @@
+[mover] Voy a la plaza. (10s) []
+   pasos=[('move_to', {'destination': 'plaza'}), ('check_state', {})]
+   taberna→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas a la plaza central del pueblo. Una fuente de piedra se encuentra en el centro. Observas a Elena la comerciante, una figura conocida en el lugar. Puedes ir a la taberna, la herrería o hacia el bosque.'
+[hablar] Hola Elena, ¿qué vendes? (2s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Elena la comerciante.\nElena la comerciante: "¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo."'
+[comprar] ¿Cuánto cuesta una poción? (9s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → '¿Cuánto cuesta una poción?'
+[comprar] ¿Me la dejas en 5 monedas? (3s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 15→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 10 monedas de oro a Elena la comerciante y obtienes: pocion de curacion.'
+[comprar] Le compro una poción a Elena. (2s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.'
+[comprar] Le compro otra poción. (2s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo comprar: pocion de curacion cuesta 10 de oro y solo tienes 5.'
+[pregunta_estado] ¿Cuánto oro me queda? (2s) []
+   pasos=[]
+   plaza→plaza hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Tienes 5 monedas de oro. La plaza central resplandece con la luz del sol que se filtra entre las hojas verdes de los árboles cercanos, creando patrones danzantes sobre el suelo de piedra.'
+[mover] Voy a la herrería. (14s) []
+   pasos=[]
+   plaza→herreria hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Llegas a la herrería, donde el calor del horno es sofocante. Espadas y escudos cuelgan de las paredes, y el olor a hierro derretido es inconfundible. Bron el herrero, un hombre fornido y orgulloso de su oficio, te mira con interés.'
+[hablar] Bron, ¿sabes algo de los goblins? (3s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 5→5 inv ['espada oxidada', 'pocion de curacion', 'pocion de curacion']
+   → 'Hablas con Bron el herrero.\nBron el herrero: "En este rincón de la tierra no han pasado goblins por aquí, así que no sé nada de esos bestias."'
+[comprar] Le pago a Bron para que afile mi espada. (2s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 5→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 5 monedas de oro a Bron el herrero y obtienes: afilar espada.'
+[comprar] Le pago otra vez para que la afile. (2s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'No se pudo comprar: afilar espada cuesta 5 de oro y solo tienes 0.'
+[pregunta_dialogo] ¿Qué me dijo Elena? (2s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'Elena la comerciante te dijo: "¡Hola! Tengo pociones de curación a la venta. Cada una cuesta 10 monedas de oro. Son muy útiles para cuando te encuentras con algún contratiempo."'
+[pregunta_memoria] ¿Qué compré hoy? (16s) []
+   pasos=[]
+   herreria→herreria hp 20→20 oro 0→0 inv ['espada afilada', 'pocion de curacion', 'pocion de curacion']
+   → 'Le pagas 5 monedas de oro a Bron el herrero para que afilie tu espada. Después, visitas Elena la comerciante en la plaza y le pagas 10 monedas de oro por una poción de curación.'
+EXIT 0

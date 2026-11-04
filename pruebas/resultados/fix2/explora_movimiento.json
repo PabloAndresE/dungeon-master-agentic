@@ -1,0 +1,441 @@
+[
+ {
+  "a": "Voy al castillo.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No puedes cruzar directamente al castillo desde la taberna. Sigues en la taberna, rodeado del calor del fuego y el aroma del estofado. Goruk el tabernero, un enano gruñón pero de buen corazón, te mira con una ceja levantada.",
+  "flags": [],
+  "t": 26.9,
+  "err": null
+ },
+ {
+  "a": "Voy a la taberna.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Ya estás en taberna.",
+  "flags": [],
+  "t": 3.8,
+  "err": null
+ },
+ {
+  "a": "Salgo a la calle.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Sales a la plaza central del pueblo, donde la fuente de piedra centra la atención de los pocos transeúntes que la visitan. Elena la comerciante, una mujer de aspecto astuto pero amable, te saluda con una sonrisa. Puedes ir a: taberna, herreria, bosque\n\nRuta más corta de plaza a taberna: plaza → taberna",
+  "flags": [],
+  "t": 23.0,
+  "err": null
+ },
+ {
+  "a": "Me voy a la forja.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "herreria"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: herreria. Te mueves a: herreria. El calor del horno es sofocante. Espadas y escudos cuelgan de las paredes.\nNPCs aqui: "
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: herreria | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: El cal"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Sales de la plaza y te diriges a la herrería. El calor del horno es sofocante, y las paredes están cubiertas de espadas y escudos. Bron el herrero, un herrero fornido y orgulloso de su oficio, te saluda con una sonrisa. Pregunta si necesitas arreglar o forjar algo.",
+  "flags": [],
+  "t": 23.7,
+  "err": null
+ },
+ {
+  "a": "Voy a la plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la plaza central del pueblo. Una fuente de piedra se encuentra en el centro. Observas a Elena la comerciante, una figura conocida que parece estar atareada con sus asuntos. La plaza está tranquila esta mañana, con las puertas de la taberna y la herrería a tus alrededores. Puedes dirigirte a la taberna, la herrería o hacia el bosque que se extiende más allá.",
+  "flags": [],
+  "t": 18.6,
+  "err": null
+ },
+ {
+  "a": "Vuelvo atrás.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "herreria"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: herreria. Te mueves a: herreria. El calor del horno es sofocante. Espadas y escudos cuelgan de las paredes.\nNPCs aqui: "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas de nuevo a la herrería. El calor del horno es sofocante, y espadas y escudos cuelgan de las paredes.",
+  "flags": [],
+  "t": 36.1,
+  "err": null
+ },
+ {
+  "a": "Voy a la plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaz"
+   ]
+  ],
+  "antes": {
+   "location": "herreria",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas nuevamente a la plaza central del pueblo. La fuente de piedra centra la atención de la plaza, y observas a Elena la comerciante, una figura conocida que parece estar atareada con sus asuntos. Puedes dirigirte a la taberna, la herrería o hacia el bosque que se extiende más allá.",
+  "flags": [],
+  "t": 16.6,
+  "err": null
+ },
+ {
+  "a": "Corro hacia el bosque y luego a la cueva.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "bosque"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: bosque. Te mueves a: bosque. Arboles altos bloquean la luz. Se escuchan ruidos entre la maleza.\nNPCs aqui: nadie. Objet"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Te encuentras en el bosque, donde los árboles altos bloquean la luz, y se escuchan ruidos entre la maleza. No hay nadie en particular que te observe. Hay hierbas medicinales dispersas por el suelo. Puedes dirigirte a la cueva que se encuentra cerca.",
+  "flags": [],
+  "t": 44.2,
+  "err": null
+ },
+ {
+  "a": "¿Dónde estoy?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: bosque | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Arbole"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Estás en bosque. Desde aquí puedes ir a: plaza, taberna, cueva. El bosque se drena de luz, reemplazada por una tenue bruma que se filtra entre los altos árboles, creando sombras distorsionadas.",
+  "flags": [],
+  "t": 3.7,
+  "err": null
+ },
+ {
+  "a": "Regreso a la taberna directamente.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "taberna"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: taberna. Te mueves a: taberna. Una taberna calida con olor a estofado. Un fuego crepita en la chimenea.\nNPCs aqui: ['Go"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una t"
+   ]
+  ],
+  "antes": {
+   "location": "bosque",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas de nuevo a la taberna, donde el calido olor a estofado y el crujir del fuego en la chimenea te reciben. Goruk el tabernero, un enano gruñón pero de buen corazón, te saluda brevemente. Observas que hay una antorcha encendida en el estante cercano. Puedes preguntarle algo o simplemente sentarte a tomar algo. Las puertas de la taberna están a tu alrededor, permitiéndote salir si lo deseas.",
+  "flags": [],
+  "t": 20.2,
+  "err": null
+ },
+ {
+  "a": "¿Cómo llego a la cueva?",
+  "intencion": "pregunta_memoria",
+  "pasos": [
+   [
+    "consult_world",
+    {
+     "topic": "cueva"
+    },
+    "Lugares DESCUBIERTOS en la aventura: 0 (ninguno)\nEntidades relevantes:\n- Goruk el tabernero (npc): Enano tabernero, gruñón pero de buen corazón. Habla corto y d"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "La ruta más corta de taberna a cueva es: taberna → bosque → cueva. Puedes salir de la taberna por las puertas y dirigirte al bosque. El camino a través del bosque te llevará a la cueva donde encontrarás un ambiente oscura y humedo, con huesos viejos esparcidos por el suelo.",
+  "flags": [],
+  "t": 26.1,
+  "err": null
+ },
+ {
+  "a": "Voy a la cueva.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "cueva"
+    },
+    "MOVIMIENTO RECHAZADO → el jugador está en: taberna. No puedes ir a 'cueva' desde taberna. Destinos validos: plaza, bosque"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "No puedes ir directamente a la cueva desde la taberna. Debes pasar por el bosque primero. En el centro de la cueva, ves un cofre que contiene 50 monedas de oro.",
+  "flags": [],
+  "t": 47.2,
+  "err": null
+ }
+]

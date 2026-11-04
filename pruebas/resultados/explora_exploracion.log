@@ -1,0 +1,53 @@
+[explorar] Examino la chimenea de la taberna. (48s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas la chimenea y encuentras un lugar oculto detrás de un trozo de tablado. Allí descubres un pequeño nicho con una vieja tabla que parece tener un propósito oculto. Goruk el tabernero, que está ocupado atendiendo a otros clientes, no se da cuenta de tu descubrimiento en este momento.'
+[explorar] ¿Encontré algo? (227s) ['LENTO(227s)']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas la chimenea y encuentras un viejo tablero de ajedrez. Este tablero antiguo y desgastado descansa debajo de la barra, cubierto por un trapo. Parece que nadie ha tocado en mucho tiempo. Goruk el tabernero, ocupado atendiendo a otros clientes, no se da cuenta de tu descubrimiento en este momento.'
+[recoger] Lo recojo. (3s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → "No hay 'tablero de ajedrez' aqui. Objetos disponibles: ['antorcha', 'viejo tablero de ajedrez']"
+[pregunta_estado] ¿Qué llevo? (11s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llevas: espada oxidada, pocion de curacion. En la taberna, la luz cálida y parpadeante de las velas ilumina las caras sonrientes de los clientes mientras un delicioso aroma a estofado se difumina por el aire, mezclándose con el susurro de conversaciones y el crujir de leña en la chimenea.'
+[explorar] Examino la chimenea otra vez. (70s) ['LENTO(70s)']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Examinas detenidamente la chimenea y, tras desplazar un trozo de tablado, descubres un nicho oculto. Dentro, encuentras varias cosas interesantes: una vieja lámpara de aceite, un mapa desgastado y una llave de bronce. Parece que se usa para guardar objetos importantes.'
+[mover] Busco una puerta trasera. (87s) ['LENTO(87s)']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'No hay puerta trasera en la taberna. Sigues en la misma sala, rodeado de clientes que beben y conversan. Goruk el tabernero sigue atendiendo a los clientes, sus ojos grises parecen pasar de uno a otro, pero no se fija en ti.'
+[mover] Entro por ahí. (131s) ['LENTO(131s)']
+   pasos=[]
+   taberna→nicho hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Oculto detrás del tablado de la chimenea, se encuentra un nicho con varias cosas interesantes. Parece que se usa para guardar objetos importantes.'
+[pregunta_estado] ¿Dónde estoy? (8s) []
+   pasos=[]
+   nicho→nicho hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Estás en nicho. Desde aquí puedes ir a: taberna. En la penumbra, el nicho revela sus secretos con un resplandor tenue que cuelga de la chimenea, mientras el crujir de las maderas viejas y el susurro del viento parecen susurrar historias olvidadas.'
+[mover] Vuelvo a la taberna. (137s) ['LENTO(137s)']
+   pasos=[]
+   nicho→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas de nuevo a la taberna, donde el olor a estofado y la chimenea crepitante te reciben. En el nicho detrás del tablado de la chimenea, puedes ver el viejo tablero de ajedrez y la antorcha que ilumina la zona.'
+[pregunta_memoria] ¿Qué sitios nuevos hay? (70s) ['DICE_LLEGAS_SIN_MOVER(taberna)', 'LENTO(70s)']
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Llegas de nuevo a la taberna, donde Goruk el tabernero atiende a los clientes con su habitual gruñón pero amable presencia. La chimenea crujiente y el olor a estofado te reciben de nuevo.'
+[hablar] Busco al tabernero. (6s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion']
+   → 'Hablas con Goruk el tabernero.\nGoruk el tabernero: "Aquí no busques tabernero, anda a otro rincón."'
+[recoger] Recojo la antorcha. (53s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → 'Recoljas la antorcha del nicho detrás del tablado de la chimenea. Ahora llevas la antorcha contigo.'
+[recoger] Recojo la antorcha. (7s) []
+   pasos=[]
+   taberna→taberna hp 20→20 oro 15→15 inv ['espada oxidada', 'pocion de curacion', 'antorcha']
+   → "No hay 'antorcha' aqui. Objetos disponibles: ['viejo tablero de ajedrez']"
+EXIT 0

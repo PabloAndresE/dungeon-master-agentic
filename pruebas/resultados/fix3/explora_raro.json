@@ -1,0 +1,407 @@
+[
+ {
+  "a": "...",
+  "intencion": "hablar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: taberna | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: Una tab"
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Hablas con Goruk el tabernero.\nGoruk el tabernero: \"Dicen que una bruja vive en el pantano más allá del bosque, pero el bosque es peligroso de noche. Mejor evita la oscuridad si puedes.\"",
+  "flags": [],
+  "t": 6.4,
+  "err": null
+ },
+ {
+  "a": "I go to the plaza.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "move_to",
+    {
+     "destination": "plaza"
+    },
+    "MOVIMIENTO EXITOSO → el jugador está en: plaza. Te mueves a: plaza. La plaza central del pueblo. Una fuente de piedra en el centro.\nNPCs aqui: ['Elena la comerc"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "taberna",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llegas a la plaza central del pueblo. Elena la comerciante, una mujer astuta y amable, está sentada en una banca charlando con algunos lugareños. ¿Qué deseas hacer en la plaza?",
+  "flags": [],
+  "t": 46.2,
+  "err": null
+ },
+ {
+  "a": "asdfgh qwerty",
+  "intencion": "otra",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Ella te ve y te saluda amablemente.",
+  "flags": [],
+  "t": 17.9,
+  "err": null
+ },
+ {
+  "a": "¿Qué hora es?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Es mañana: la luz de la mañana entra clara. La plaza central del pueblo se ilumina con la tenue luz matutina, proyectando sombras danzantes sobre la piedra de la fuente, mientras los primeros pájaros cantores se asoman entre los árboles.",
+  "flags": [],
+  "t": 4.0,
+  "err": null
+ },
+ {
+  "a": "Bailo en la mesa.",
+  "intencion": "otra",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mañana | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaza "
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Elena la comerciante te mira con curiosidad, esperando que hagas algo más.",
+  "flags": [],
+  "t": 46.5,
+  "err": null
+ },
+ {
+  "a": "Me duermo un rato.",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaz"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Estás en plaza. Aquí hay: ningún objeto. Personajes: Elena la comerciante. Llevas: espada oxidada, pocion de curacion. La plaza central resplandece bajo el brillante sol de mediodía, proyectando sombras danzantes sobre la piedra pulida de la fuente, mientras el aire está perfumado por la hierba recién cortada y las flores silvestres que bordean los bordes de la plaza.",
+  "flags": [],
+  "t": 5.8,
+  "err": null
+ },
+ {
+  "a": "Le robo el oro a Goruk.",
+  "intencion": "atacar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaz"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Elena la comerciante, sentada en una banca de la plaza, te observa con una mezcla de curiosidad y desconfianza mientras te acercas. Intentas sacarle oro, pero ella es astuta y rápidamente se pone en guardia.",
+  "flags": [
+   "LENTO(66s)"
+  ],
+  "t": 66.4,
+  "err": null
+ },
+ {
+  "a": "Grito muy fuerte.",
+  "intencion": "otra",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: espada oxidada, pocion de curacion]\nDescripcion del lugar: La plaz"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Gritas con fuerza en la plaza, pero Elena la comerciante te mira con sorpresa. Ella no se mueve ni se pone en guardia; en cambio, sigue sentada en la banca, charlando con algunos lugareños que pasan por allí.",
+  "flags": [],
+  "t": 44.7,
+  "err": null
+ },
+ {
+  "a": "Lanzo la espada al fuego.",
+  "intencion": "soltar",
+  "pasos": [
+   [
+    "drop_item",
+    {
+     "item_name": "Lanzo la espada al fuego."
+    },
+    "Soltaste: espada oxidada. Queda en plaza. [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: pocion de curacion]"
+   ],
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: pocion de curacion]\nDescripcion del lugar: La plaza central del pu"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "espada oxidada",
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Sueltas espada oxidada: queda en el suelo (plaza).",
+  "flags": [],
+  "t": 4.6,
+  "err": null
+ },
+ {
+  "a": "¿Qué llevo?",
+  "intencion": "pregunta_estado",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: pocion de curacion]\nDescripcion del lugar: La plaza central del pu"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Llevas: pocion de curacion. La plaza central resplandece bajo el brillante cielo de mediodía, donde la luz cálida y dorada baña las piedras de la fuente, creando sombras danzantes mientras un suave zumbido de conversaciones y risas fluye desde los alrededores.",
+  "flags": [],
+  "t": 3.4,
+  "err": null
+ },
+ {
+  "a": "Le pregunto a Goruk si me vio bailar.",
+  "intencion": "hablar",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: mediodía | Inventario: pocion de curacion]\nDescripcion del lugar: La plaza central del pu"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Goruk el tabernero no está aquí (lo encuentras en taberna).",
+  "flags": [],
+  "t": 4.9,
+  "err": null
+ },
+ {
+  "a": "Quiero salir de la aventura.",
+  "intencion": "mover",
+  "pasos": [
+   [
+    "check_state",
+    {},
+    "Estado del jugador: [HP: 20/20 | Oro: 15 | Ubicacion: plaza | Momento: tarde | Inventario: pocion de curacion]\nDescripcion del lugar: La plaza central del puebl"
+   ]
+  ],
+  "antes": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "despues": {
+   "location": "plaza",
+   "hp": 20,
+   "gold": 15,
+   "inventory": [
+    "pocion de curacion"
+   ]
+  },
+  "resp": "Estás en plaza. La plaza central del pueblo. Una fuente de piedra en el centro.",
+  "flags": [],
+  "t": 12.0,
+  "err": null
+ }
+]
